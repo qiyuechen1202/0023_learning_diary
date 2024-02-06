@@ -1,3 +1,20 @@
 ---
 title: "Week02"
 ---
+
+# Xaringan Presentation: Sentinel-2 satellites {.unnumbered}
+
+Copernicus is the earth observation programme launched by the European Space Agency(ESA), which can provide accurate, timely and easily accessible information to improve the living environments. To acquire the data, ESA developed the family of Sentinel satellites.
+
+The presentation  will focus on Sentinel-2 satellites, and introduce overview, applications and reflections. Besides, the presentation will be visualised by Xaringan.
+```{r echo = FALSE}
+# install.packages('xaringanExtra')
+```
+
+```{r echo = FALSE, out.width='40%'}
+xaringanExtra::embed_xaringan(
+  url = "https://qiyuechen1202.github.io/0023_pratical_project/",
+  ratio = "16:9")
+```
+```
+

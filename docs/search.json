@@ -30,8 +30,106 @@
   {
     "objectID": "Week01.html",
     "href": "Week01.html",
-    "title": "3  Week01",
+    "title": "2  Week01",
     "section": "",
-    "text": "4 Content Summary\nThe below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.\n\n\n\nFigure 1 Content Summary\n\n\n\n\n5 Application\n\n\n6 Reflection"
+    "text": "1.Content Summary\nThe below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge."
+  },
+  {
+    "objectID": "Week04.html",
+    "href": "Week04.html",
+    "title": "5  Week04",
+    "section": "",
+    "text": "1.Content Summary: Policy Challenge"
+  },
+  {
+    "objectID": "Week06.html",
+    "href": "Week06.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Week01.html#basic-raster-image-processing-and-statistics",
+    "href": "Week01.html#basic-raster-image-processing-and-statistics",
+    "title": "2  Week01",
+    "section": "1.1 Basic Raster Image Processing and Statistics",
+    "text": "1.1 Basic Raster Image Processing and Statistics\nIn this section, I employ the satellite image of Cape Town collected for Sentinel-2 L2A on 15 May 2022. European Space Agency(ESA) has proposed the Copernicus Sentinel-2 mission to observe earth by recording the wide-swath, high-resolution, multi-spectral imagery. The Sentinel-2 captures 13 spectral bands with different spatial resolutions.\nTo explore the features of spectral bands and their combinations, the data is resampled to 20m by considering the neighbouring pixels. Further, the bands are rearranged based on the band combinations provided by GISGeography ,as shown in Figure 2.\n\n\n\nFigure 2 Sentinel Band Combinations: Natural Colour (B4,B3,B2)\n\n\nFigure 2 combines the red, green, and blue channels, reflecting an image similar to what the eye sees. The colour infrared adopts the near-infrared (B8) band to capture chlorophyll, showing healthier vegetation with darker red.\n\n\n\nFigure 3 Sentinel Band Combinations: Colour Infrared (B8,B4,B3)\n\n\nAs shown in Figure 3, the eastern peninsula displays a large area of darker red, showing a dense vegetation coverage. In addition, the urbanised areas embody white and grey.\n\n\n\nFigure 4 Sentinel Band Combinations: Agriculture (B11,B8,B2)\n\n\nFigure 4 embodies a combination for agriculture. Similar to Colour Infrared, B8 is employed to monitor vegetation health. Combined with shortwave Infrared band (B11) being sensitive to moisture, this combination is beneficial to monitoring vegetation. Thus, the figure displays healthier and more hydrated vegetation with more bright green. In addition to vegetation, B11 also provides information about surface features. It mainly reflects that the bare soil area in the northeast corner of Cape Town reflects a slight red element. Moreover, the urbanised area appears blue."
+  },
+  {
+    "objectID": "Week01.html#the-differences-between-and-sentinel-2-and-landsat-8",
+    "href": "Week01.html#the-differences-between-and-sentinel-2-and-landsat-8",
+    "title": "2  Week01",
+    "section": "1.2 The Differences between and Sentinel-2 and Landsat-8",
+    "text": "1.2 The Differences between and Sentinel-2 and Landsat-8"
+  },
+  {
+    "objectID": "Week01.html#the-applications-of-remote-sensing-in-urban-studies",
+    "href": "Week01.html#the-applications-of-remote-sensing-in-urban-studies",
+    "title": "2  Week01",
+    "section": "2.0 the applications of remote sensing in urban studies",
+    "text": "2.0 the applications of remote sensing in urban studies\nRemote sensing imagery from satellites has been widely adopted in different fields, including Military Applications, Environmental Monitoring, Agriculture Surveys, Disaster Response, Urban Planning and Development, etc. Based on my background in urban planning, this section will discuss the application of remote sensing in urban studies.\nIn recent decades, urban areas have experienced unprecedented rapid growth. Inevitably, the speed and scale of urbanisation pose challenges, including urban land consumption, resource depletion (such as energy and water), greenhouse gas emissions, public health, etc. To address these challenges, scholars and policymakers have widely applied remote sensing as a useful tool for capturing urban environmental data. The application of urban remote sensing mainly focuses on the three aspects: 1. Observing or predicting land-use and land-cover change; 2. Monitoring the urban environment; 3. Observing human activities.\nThis section will demonstrate how remote sensing tools can provide valuable information for urban research and discuss the advantages and disadvantages of their application in this field."
+  },
+  {
+    "objectID": "Week01.html#advantages",
+    "href": "Week01.html#advantages",
+    "title": "2  Week01",
+    "section": "2.1 Advantages",
+    "text": "2.1 Advantages\nBased on its features of wide area coverage and repeated cycles, remote sensing can measure a regional or continental scale of urban environmental conditions and quantify changes in those conditions over time. The primary focus of this application lies in studying urban land cover and land use changes. The application is evident in the study of Wang et al.(2012), who adopted the Landsat TM/ETM+ to track China’s urban expansion from 1990 to 2010. Similarly, Zhou et al.(2018) explored the global urban dynamics from 1992 to 2013 using nighttime light (NTL) observations from DMSP/OLS. Furthermore, the Landsat dataset was also employed by Wang(2020) to predict land use and land cover changes in Kathmandu, Nepal. These studies underscore the feasibility of remote sensing for studying changes in land use and land cover at wide temporal and geographical scales.\nSecondly, remote sensing provides high-resolution imagery data, which is conducive to effectively identifying the elements of urban environments. The application is evident in the study of Qian et al.(2015), which examines the spatial pattern of green space and its changes in Beijing using satellite images with 2.5m spatial resolution, as shown in Figure(4). In addition, the QuickBird satellite provided very high-resolution imagery to the study of Kit, Lüdeke and Reckien(2012), which was employed to identify urban slums in Hyderabad, India.\n\n\n\nFigure 4 Land cover classifications in 2005 and 2009. (source from Qian et al.,2015)\n\n\n\nThe images from 2005 and 2009 were obtained from Systeme Probatoire d’Observation dela Tarre(SPOT-5) and Advanced Land Observation Satellite(ALOS), respectively. The images were reprocessed to obtain multispectral images with 2.5 m spatial resolution.\n\nThere are two examples of the application in terms of observing human activities. Based on the two advantages mentioned above, remote sensing is considered as a supplementary tool for demographic, socioeconomic, and health investigations that are constrained in their geographical scope (Zhu et al., 2019). Regarding the social equity aspect, Kuffer et al. (2018) reported the disparity in access to street lighting between non-deprived built-up areas and slums by using NTL images and slum boundary data. In terms of public health, the Landsat-8 dataset and demographic distribution data were employed to assess the impact of urban heat islands on human health (Sagris and Sepp, 2017)."
+  },
+  {
+    "objectID": "Week01.html#disadvantages",
+    "href": "Week01.html#disadvantages",
+    "title": "2  Week01",
+    "section": "2.1 Disadvantages",
+    "text": "2.1 Disadvantages\nAlthough the advantages of remote sensing prove that it can be widely used in urban research, there are still drawbacks in its application. In their study of slums, Mahabir et al. (2018) state that remote sensing data can be used to identify the physical features of environments, while it is difficult to capture the characteristics of socioeconomic and cultural aspects. Thus, capturing a holistic understanding by integrating remote sensing data and socio-cultural datasets is essential. Besides, Bianchetti and MacEachren (2015) mentioned a misunderstanding that remote sensing images authoritatively and objectively represent the real world. However, the interpretation of remote sensing images requires analysts to draw on their knowledge, experience, and cognitive processes to obtain insights from the visual clues in the images, revealing the nature of subjectivity (White, 2019). Although scholars have adopted machine learning methods, such as convolutional neural networks (CNNs), to interpret and classify remote sensing images, the complexity of this process has become a significant obstacle in its application to urban studies."
+  },
+  {
+    "objectID": "Week02.html",
+    "href": "Week02.html",
+    "title": "3  Week02",
+    "section": "",
+    "text": "Xaringan Presentation: Sentinel-2 satellites\nCopernicus is the earth observation programme launched by the European Space Agency(ESA), which can provide accurate, timely and easily accessible information to improve the living environments. To acquire the data, ESA developed the family of Sentinel satellites.\nThe presentation will focus on Sentinel-2 satellites, and introduce overview, applications and reflections. Besides, the presentation will be visualised by Xaringan.\n\n\n\n\n\n\n\n\n```"
+  },
+  {
+    "objectID": "Week01.html#the-applications-in-urban-studies",
+    "href": "Week01.html#the-applications-in-urban-studies",
+    "title": "2  Week01",
+    "section": "2.0 The Applications in Urban Studies",
+    "text": "2.0 The Applications in Urban Studies\nRemote sensing imagery from satellites has been widely adopted in different fields, including Military Applications, Environmental Monitoring, Agriculture Surveys, Disaster Response, Urban Planning and Development, etc. Based on my background in urban planning, this section will discuss the application of remote sensing in urban studies.\nIn recent decades, urban areas have experienced unprecedented rapid growth. Inevitably, the speed and scale of urbanisation pose challenges, including urban land consumption, resource depletion (such as energy and water), greenhouse gas emissions, public health, etc. To address these challenges, scholars and policymakers have widely applied remote sensing as a useful tool for capturing urban environmental data. The application of urban remote sensing mainly focuses on the three aspects: 1. Observing or predicting land-use and land-cover change; 2. Monitoring the urban environment; 3. Observing human activities.\nThis section will demonstrate how remote sensing tools can provide valuable information for urban research and discuss the advantages and disadvantages of their application in this field."
+  },
+  {
+    "objectID": "Week04.html#background-thermal-environment-in-singapore",
+    "href": "Week04.html#background-thermal-environment-in-singapore",
+    "title": "5  Week04",
+    "section": "1.1 Background: Thermal environment in Singapore",
+    "text": "1.1 Background: Thermal environment in Singapore\nAffected by major global climate changes caused by greenhouse gas emissions, Singapore’s annual average temperature rose from 26.9°C to 28.0°C from 1980 to 2020; Moreover, by 2100, the temperature will rise by 1.4°C to 4.6°C due to the long-term effects of climate change (The National Climate Change Secretariat (NCCS), no date).\nHowever, the UHI effect exacerbates the problem of high temperatures and it is considered as one of the accumulated results of rapid urbanisation in Singapore(Borzino et al., 2020). Heat island effect is a phenomenon that urban areas have a higher temperature than the surrounding area (Oke,1982). The primary reasons for the UHI effect is the greater heat storage due to land use change from natural to impervious surface(Grimmond, 2007). Besides, With the rise in urban population, the increases of building density and human activities also create more energy consumption and greenhouse gas emissions(Zhang et al., 2021). In the terms of Singapore, daytime temperatures are around 0-2°C higher and night-time temperatures are around 2-4°C higher in urban areas compared to forested areas(Figure 1) (Urban Redevelopment Authority(URA),2023). The warmer climate has adverse impacts on biodiversity, public health, food security, energy consumption and other aspects, resulting in a unsustainable future in Singapore.\n\n\n\nFigure 1 The urban heat island effect in Singapor. Picture source from Cooling Singapore"
+  },
+  {
+    "objectID": "Week04.html#singapores-climate-targets",
+    "href": "Week04.html#singapores-climate-targets",
+    "title": "5  Week04",
+    "section": "1.2 Singapore’s Climate Targets",
+    "text": "1.2 Singapore’s Climate Targets\nCharting Singapore’s Net Zero Future\nSingapore has proposed the Nationally Determined Contribution (NDC) and Long-Term Low-Emissions Development Strategy (LEDS) in response to their climate ambitions.In October 2022, the national climate target was further raised as follows:\n\nAchieve net zero emissions by 2050.\nReduce 2030 emissions to 60 MtCO2e after peaking emissions earlier."
+  },
+  {
+    "objectID": "Week04.html#policies-related-to-uhi",
+    "href": "Week04.html#policies-related-to-uhi",
+    "title": "5  Week04",
+    "section": "1.3 Policies Related to UHI",
+    "text": "1.3 Policies Related to UHI\nTo achieve net zero emission by 2050 and sustainable development, Singapore has launched some thrusts. The below sections will explore some policies and strategies related to mitigating the UHI effect.\nThe Singapore Green Plan 2030\nLaunched in February 2021, The Singapore Green Plan 2030 has proposed 5 pillars for sustainable development, including City in Nature, Energy Reset, Sustainable Living, Green Economy and Resilient Future, indicated in Figure 2.\n\n\n\nFigure 2 The Content of Singapore Green Plan 2030. Picture source from The Singapore Green Plan 2030\n\n\nIn the section of Resilient Future, Keeping Singapore cool is emphasised to mitigate the rise in urban heat, and the key strategies proposed by Ministry of Sustainability and the Environment and URA (no date) are as follows:\n\nUnderstanding the UHI Effect\n\nDeploying an island-wide network of climate sensors to collect data.\nEstablishing models to simulate future climatic scenarios and the microclimates of built-up area.\n\nConducting Research on the Effectiveness of UHI Mitigation Strategies\n\nThe research projects, such as ‘Cooling Singapore 2.0’, will help policymakers to assess the effectiveness of various strategies to moderate the UHI effect.\n\nImplementing UHI Mitigation Measures\nThe research findings and insights will provide mitigation measures for the UHI effect.The existing interim measures are:\n\nIncreasing greenery provision in existing built-up areas.\nOptimising building layouts to maximise natural ventilation and shade.\nAdopting ‘cool materials’ on buildings.\nPromoting HDB Green Towns programmes\n……"
+  },
+  {
+    "objectID": "Week04.html#linking-to-global-agendas-goals",
+    "href": "Week04.html#linking-to-global-agendas-goals",
+    "title": "5  Week04",
+    "section": "1.4 Linking to global agendas / goals",
+    "text": "1.4 Linking to global agendas / goals"
+  },
+  {
+    "objectID": "Week04.html#linking-to-global-agendas-and-goals",
+    "href": "Week04.html#linking-to-global-agendas-and-goals",
+    "title": "5  Week04",
+    "section": "1.4 Linking to global agendas and goals",
+    "text": "1.4 Linking to global agendas and goals"
   }
 ]
