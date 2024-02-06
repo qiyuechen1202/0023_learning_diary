@@ -14,7 +14,7 @@ In this section, I employ the satellite image of Cape Town collected for Sentine
 
 To explore the features of spectral bands and their combinations, the data is resampled to 20m by considering the neighbouring pixels. Further, the bands are rearranged based on the band combinations provided by [GISGeography](https://gisgeography.com/sentinel-2-bands-combinations/) ,as shown in Figure 2.
 
-![Figure 2 Sentinel Band Combinations: Natural Colour (B4,B3,B2)](source/week01/resampled_432.png)
+![Figure 2 Sentinel Band Combinations: Natural Colour (B4,B3,B2)](source/week01/resampled_432.png) {width=80%}
 
 Figure 2 combines the red, green, and blue channels, reflecting an image similar to what the eye sees. The colour infrared adopts the near-infrared (B8) band to capture chlorophyll, showing healthier vegetation with darker red.
 
