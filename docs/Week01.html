@@ -200,7 +200,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="unnumbered anchored" data-anchor-id="basic-raster-image-processing-and-statistics">1.1 Basic Raster Image Processing and Statistics</h2>
 <p>In this section, I employ the satellite image of Cape Town collected for Sentinel-2 L2A on 15 May 2022. <a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2#:~:text=The%20Copernicus%20Sentinel%2D2%20mission,of%20our%20land%20and%20vegetation">European Space Agency(ESA)</a> has proposed the Copernicus Sentinel-2 mission to observe earth by recording the wide-swath, high-resolution, multi-spectral imagery. The Sentinel-2 captures 13 spectral bands with different spatial resolutions.</p>
 <p>To explore the features of spectral bands and their combinations, the data is resampled to 20m by considering the neighbouring pixels. Further, the bands are rearranged based on the band combinations provided by <a href="https://gisgeography.com/sentinel-2-bands-combinations/">GISGeography</a> ,as shown in Figure 2.</p>
-<p><img src="source/week01/resampled_432.png" class="img-fluid" alt="Figure 2 Sentinel Band Combinations: Natural Colour (B4,B3,B2)"> {width=80%}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week01/resampled_432.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure 2 Sentinel Band Combinations: Natural Colour (B4,B3,B2)</figcaption>
+</figure>
+</div>
 <p>Figure 2 combines the red, green, and blue channels, reflecting an image similar to what the eye sees. The colour infrared adopts the near-infrared (B8) band to capture chlorophyll, showing healthier vegetation with darker red.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
