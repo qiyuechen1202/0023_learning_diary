@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "Week01.html",
-    "href": "Week01.html",
-    "title": "3  Week01",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "0023_learning_diary",
     "section": "",
-    "text": "4 Content Summary\nThe below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.\n\n\n\nFigure 1 Content Summary\n\n\n\n\n5 Application\n\n\n6 Reflection"
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
   },
   {
     "objectID": "intro.html",
@@ -26,5 +26,12 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Week01.html",
+    "href": "Week01.html",
+    "title": "3  Week01",
+    "section": "",
+    "text": "4 Content Summary\nThe below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.\n\n\n\nFigure 1 Content Summary\n\n\n\n\n5 Application\n\n\n6 Reflection"
   }
 ]
