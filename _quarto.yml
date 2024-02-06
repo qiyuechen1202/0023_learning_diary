@@ -16,6 +16,7 @@ book:
     - Week02.qmd
     - Week03.qmd
 
+
 bibliography: references.bib
 
 format:
