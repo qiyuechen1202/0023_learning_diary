@@ -3,13 +3,16 @@ project:
 
 book:
   title: "0023_learning_diary"
-  author: "Norah Jones"
+  author: "Qiyue Chen"
   date: "1/18/2024"
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
+    - Week01.qmd
+    - Week02.qmd
+    - Week03.qmd
 
 bibliography: references.bib
 
