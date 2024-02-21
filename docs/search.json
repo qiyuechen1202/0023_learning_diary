@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "0023_learning_diary",
     "section": "",
-    "text": "Personal Introduction\nThis is a Quarto book. xxxxx"
+    "text": "Personal Introduction\nThis is a Quarto book.\nxxx"
   },
   {
     "objectID": "intro.html",
@@ -32,7 +32,7 @@
     "href": "Week01.html",
     "title": "1  Week01",
     "section": "",
-    "text": "1.Content Summary\nThe below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge."
+    "text": "1.Content Summary\nThe below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.\nRemote sensing provides multiple datasets, which create possibilities to explore urban studies. Exciting is the potential synergy between remote sensing data and socioeconomic indicators, presenting an avenue for exploring spatial heterogeneity. It may be included in my future research. However, The drawbacks also suggest that as a researcher of urban studies, I need to think carefully when using these data. This entails thoughtful decisions regarding the selection of remote sensing data, processing methods, analytical approaches, and result interpretation.\nIn my previous studies, I have focused on the application of Geographic Information Systems (GIS) with vector data. Over the next few weeks, exploring the knowledge of remote sensing will allow me to integrate these two technologies, which can enhance my ability in data acquisition and spatial analysis. I am looking forward to learning about remote sensing in the coming weeks :)."
   },
   {
     "objectID": "Week04.html",
@@ -44,9 +44,9 @@
   {
     "objectID": "Week06.html",
     "href": "Week06.html",
-    "title": "References",
+    "title": "5  Week06",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "6 Week06"
   },
   {
     "objectID": "Week01.html#basic-raster-image-processing-and-statistics",
@@ -80,8 +80,8 @@
     "objectID": "Week01.html#disadvantages",
     "href": "Week01.html#disadvantages",
     "title": "1  Week01",
-    "section": "2.1 Disadvantages",
-    "text": "2.1 Disadvantages\nAlthough the advantages of remote sensing prove that it can be widely used in urban research, there are still drawbacks in its application. In their study of slums, Mahabir et al. (2018) state that remote sensing data can be used to identify the physical features of environments, while it is difficult to capture the characteristics of socioeconomic and cultural aspects. Thus, capturing a holistic understanding by integrating remote sensing data and socio-cultural datasets is essential. Besides, Bianchetti and MacEachren (2015) mentioned a misunderstanding that remote sensing images authoritatively and objectively represent the real world. However, the interpretation of remote sensing images requires analysts to draw on their knowledge, experience, and cognitive processes to obtain insights from the visual clues in the images, revealing the nature of subjectivity (White, 2019). Although scholars have adopted machine learning methods, such as convolutional neural networks (CNNs), to interpret and classify remote sensing images, the complexity of this process has become a significant obstacle in its application to urban studies."
+    "section": "2.2 Disadvantages",
+    "text": "2.2 Disadvantages\nAlthough the advantages of remote sensing prove that it can be widely used in urban research, there are still drawbacks in its application. In their study of slums, Mahabir et al. (2018) state that remote sensing data can be used to identify the physical features of environments, while it is difficult to capture the characteristics of socioeconomic and cultural aspects. Thus, capturing a holistic understanding by integrating remote sensing data and socio-cultural datasets is essential. Besides, Bianchetti and MacEachren (2015) mentioned a misunderstanding that remote sensing images authoritatively and objectively represent the real world. However, the interpretation of remote sensing images requires analysts to draw on their knowledge, experience, and cognitive processes to obtain insights from the visual clues in the images, revealing the nature of subjectivity (White, 2019). Although scholars have adopted machine learning methods, such as convolutional neural networks (CNNs), to interpret and classify remote sensing images, the complexity of this process has become a significant obstacle in its application to urban studies."
   },
   {
     "objectID": "Week02.html",
@@ -131,5 +131,19 @@
     "title": "4  Week04",
     "section": "1.4 Linking to global agendas and goals",
     "text": "1.4 Linking to global agendas and goals\nIn support of SDGs: 11 sustainable cities and commnuities: Make cities and human settlenents inclusive, safe, resillient and sustainable. 13 Climate action: Take urgent action to combat climate change and its impacts\n\n\n\nFigure 3 In support of SDGs 12 and SDG 13"
+  },
+  {
+    "objectID": "Week03.html",
+    "href": "Week03.html",
+    "title": "3  Week03",
+    "section": "",
+    "text": "4 Summary"
+  },
+  {
+    "objectID": "Week07.html",
+    "href": "Week07.html",
+    "title": "6  Week07",
+    "section": "",
+    "text": "7 Week07"
   }
 ]
