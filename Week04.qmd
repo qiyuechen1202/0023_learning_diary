@@ -56,14 +56,9 @@ In the section of Resilient Future, Keeping Singapore cool is emphasised to miti
 
 ## 1.4 Linking to global agendas and goals {.unnumbered}
 
-In support of SDGs:
-11 sustainable cities and commnuities:
-Make cities and human settlenents inclusive, safe, resillient and sustainable.
-13 Climate action:
-Take urgent action to combat climate change and its impacts
+In support of SDGs: 11 sustainable cities and commnuities: Make cities and human settlenents inclusive, safe, resillient and sustainable. 13 Climate action: Take urgent action to combat climate change and its impacts
 
 ![Figure 3 In support of SDGs 12 and SDG 13](source/week04/SDG11_13.png)
-
 
 # 2.Application {.unnumbered}
 
@@ -73,12 +68,13 @@ The Local climate zone (LCZ) introduced by Stewart and Oke() provide a new class
 
 Based on their characteristics of urban morphology, built-up,surface cover (pervious and impervious). LCZs are categorised into 17 classes, namely 10 urban classes and 7 natural classes.
 
-![Figure 3 In support of SDGs 12 and SDG 13](source/week04/local_climate_zone.png)
-* The indicators for each class of LCZs
+![Figure 3 In support of SDGs 12 and SDG 13](source/week04/local_climate_zone.png) \* The indicators for each class of LCZs
 
-* The case
-
-![Figure 4 the LCZs application in Dubai](source/week04/case.png)
+-   The three process:
+    -   Collect site metadata Sentinel-1 and Landsat
+    -   Define the thermal source area
+    -   Select the local climate zone
+-   The case
 
 # 3.Reflection {.unnumbered}
 

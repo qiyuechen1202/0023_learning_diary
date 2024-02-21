@@ -50,11 +50,17 @@ Secondly, remote sensing provides high-resolution imagery data, which is conduci
 
 There are two examples of the application in terms of observing human activities. Based on the two advantages mentioned above, remote sensing is considered as a supplementary tool for demographic, socioeconomic, and health investigations that are constrained in their geographical scope (Zhu et al., 2019). Regarding the social equity aspect, Kuffer et al. (2018) reported the disparity in access to street lighting between non-deprived built-up areas and slums by using NTL images and slum boundary data. In terms of public health, the Landsat-8 dataset and demographic distribution data were employed to assess the impact of urban heat islands on human health (Sagris and Sepp, 2017).
 
-## 2.1 Disadvantages {.unnumbered}
+## 2.2 Disadvantages {.unnumbered}
 
 Although the advantages of remote sensing prove that it can be widely used in urban research, there are still drawbacks in its application. In their study of slums, Mahabir et al. (2018) state that remote sensing data can be used to identify the physical features of environments, while it is difficult to capture the characteristics of socioeconomic and cultural aspects. Thus, capturing a holistic understanding by integrating remote sensing data and socio-cultural datasets is essential. Besides, Bianchetti and MacEachren (2015) mentioned a misunderstanding that remote sensing images authoritatively and objectively represent the real world. However, the interpretation of remote sensing images requires analysts to draw on their knowledge, experience, and cognitive processes to obtain insights from the visual clues in the images, revealing the nature of subjectivity (White, 2019). Although scholars have adopted machine learning methods, such as convolutional neural networks (CNNs), to interpret and classify remote sensing images, the complexity of this process has become a significant obstacle in its application to urban studies.
 
 # 3.Reflection {.unnumbered}
+
+Remote sensing provides multiple datasets, which create possibilities to explore urban studies. Exciting is the potential synergy between remote sensing data and socioeconomic indicators, presenting an avenue for exploring spatial heterogeneity. It may be included in my future research. However, The drawbacks also suggest that as a researcher of urban studies, I need to think carefully when using these data. This entails thoughtful decisions regarding the selection of remote sensing data, processing methods, analytical approaches, and result interpretation.
+
+
+In my previous studies, I have focused on the application of Geographic Information Systems (GIS) with vector data. Over the next few weeks, exploring the knowledge of remote sensing will allow me to integrate these two technologies, which can enhance my ability in data acquisition and spatial analysis. I am looking forward to learning about remote sensing in the coming weeks :).
+
 
 # 4.Reference {.unnumbered}
 
