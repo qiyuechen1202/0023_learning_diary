@@ -26,8 +26,6 @@ As shown in Figure 3, the eastern peninsula displays a large area of darker red,
 
 Figure 4 embodies a combination for agriculture. Similar to Colour Infrared, B8 is employed to monitor vegetation health. Combined with shortwave Infrared band (B11) being sensitive to moisture, this combination is beneficial to monitoring vegetation. Thus, the figure displays healthier and more hydrated vegetation with more bright green. In addition to vegetation, B11 also provides information about surface features. It mainly reflects that the bare soil area in the northeast corner of Cape Town reflects a slight red element. Moreover, the urbanised area appears blue.
 
-## 1.2 The Differences between and Sentinel-2 and Landsat-8 {.unnumbered}
-
 # 2.Application {.unnumbered}
 
 ## 2.0 The Applications in Urban Studies {.unnumbered}
