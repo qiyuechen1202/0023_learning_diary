@@ -2,4 +2,31 @@
 title: "Week06"
 ---
 
-# Week06
+# 1.Content Summary: Google Earth Engine {.unnumbered}
+
+## 1.1 What is the Google Earth Engine(GEE) {.unnumbered}
+
+Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number.
+
+## 1.2 Why need to use GEE ?
+
+The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020),  Corelick et al.(2017), and Ollie's lecture.
+
+- Cloud-based Infrastructure
+  1. A free cloud-based service.
+  2. Timesaving: The characteristic of automatic parallel processing and fast computational platform can reduce the time-consuming for analysing big datasets.
+  3. Fast Visualisation: GEE stores and processes RS data by using a pyramid concept at different pixel resolutions, which can effectively and rapidly visualise RS processed imagery.
+
+- Dataset
+  1. Data Availability: GEE includes a large repository of publicly available geospatial datasets, including Landsat-8, Sentinel-2, Sentinel-3, and so on.
+  2. Capability of uploading data by users.
+  3. Automatically convert data into Mercator projection (EPSG: 3857).
+  4. Powerful Datasets: It also has some datasets that have been preprocessed or corrected and derivative products (e.g.NDVI, Landsat 4–8 surface reflectance, and UMD global forest change).
+- Function
+  1. Diverse Analysis Methods: GEE library provides diverse functions and algorithms for analysing datasets, including simple mathematical functions. geostatistics, machine learning (supervised and unsupervised), and image processing operations. 
+
+## How to use GEE ?
+
+  
+
+
