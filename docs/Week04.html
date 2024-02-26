@@ -156,10 +156,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#background-thermal-environment-in-singapore" id="toc-background-thermal-environment-in-singapore" class="nav-link" data-scroll-target="#background-thermal-environment-in-singapore">1.1 Background: Thermal environment in Singapore</a></li>
   <li><a href="#singapores-climate-targets" id="toc-singapores-climate-targets" class="nav-link" data-scroll-target="#singapores-climate-targets">1.2 Singapore’s Climate Targets</a></li>
   <li><a href="#policies-related-to-uhi" id="toc-policies-related-to-uhi" class="nav-link" data-scroll-target="#policies-related-to-uhi">1.3 Policies Related to UHI</a></li>
-  <li><a href="#linking-to-global-agendas-and-goals" id="toc-linking-to-global-agendas-and-goals" class="nav-link" data-scroll-target="#linking-to-global-agendas-and-goals">1.4 Linking to global agendas and goals</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">2.Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">3.Reflection</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">2.Application</a>
+  <ul class="collapse">
+  <li><a href="#urban-form-local-climate-zones-lczs" id="toc-urban-form-local-climate-zones-lczs" class="nav-link" data-scroll-target="#urban-form-local-climate-zones-lczs">2.1 Urban Form: Local Climate Zones (LCZs)</a></li>
+  <li><a href="#cooling-roofs" id="toc-cooling-roofs" class="nav-link" data-scroll-target="#cooling-roofs">2.2 “Cooling” Roofs</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">3.Reflection</a>
+  <ul class="collapse">
+  <li><a href="#linking-to-global-agendas-and-goals" id="toc-linking-to-global-agendas-and-goals" class="nav-link" data-scroll-target="#linking-to-global-agendas-and-goals">3.1 Linking to global agendas and goals</a></li>
+  </ul></li>
   <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">4.Reference</a></li>
   </ul>
 </nav>
@@ -240,35 +246,71 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="linking-to-global-agendas-and-goals" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="linking-to-global-agendas-and-goals">1.4 Linking to global agendas and goals</h2>
-<p>In support of SDGs: 11 sustainable cities and commnuities: Make cities and human settlenents inclusive, safe, resillient and sustainable. 13 Climate action: Take urgent action to combat climate change and its impacts</p>
+</section>
+<section id="application" class="level1 unnumbered">
+<h1 class="unnumbered">2.Application</h1>
+<p>Earth observation data on UHI has been widely discussed and its application can provide vital information to understand and address the challenges posed by UHI. Corresponding to Singapore cooling strategy, the section will introduce the mitigation strategies related to remotely sensed data from two perspectives, namely urban morphology and building roofs.</p>
+<section id="urban-form-local-climate-zones-lczs" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="urban-form-local-climate-zones-lczs">2.1 Urban Form: Local Climate Zones (LCZs)</h2>
+<p>The mitigation measures of UHI effect have been discussed with urban form. The Local climate zone (LCZ) introduced by Stewart and Oke(2012) provides a new classification system of urban structure,which can be applied to detect local climate changes. By using machine learning to identify and classify urban satellite images,LCZs are categorised into 17 classes, namely 10 urban classes and 7 natural classes (Figure 3). The classification criteria are diverse and can be adjusted according to the geographical characteristics of the study area. Based on the summary of Stewart and Oke(2012) the classification criteria mainly include 4 aspects, as shown in Figure 4.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="source/week04/SDG11_13.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure 3 In support of SDGs 12 and SDG 13</figcaption>
+<p><img src="source/week04/LCZ_classification.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 3 The Classification of Local Climate Zones (Source from Bechtel,et al.(2017) and Stewart and Oke(2012))</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week04/classification_criteria.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 4 The Classification Criteria of Local Climate Zones (Source from Stewart and Oke(2012))</figcaption>
+</figure>
+</div>
+<p>The heat island effect on LCZs is mainly examined by combining the Land Surface Temperature(LST), which can be reflected in the research of authors Yang et al.(2021) and Xu et al.(2022). Initially, remote sensing data were distinguished using classification indicators, and machine learning methods were applied for supervised classification of remote sensing images to discern various categories of Local Climate Zones (LCZs) （Figure 5). Subsequently, the authors acquired LST data through processing remote sensing dataset and analysed the differentiated LST displayed by different types of LCZs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week04/RS_Based_LCZ.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 5 The RS-based LCZs Map of Guangzhou City (Source from Xu et al.(2022))</figcaption>
+</figure>
+</div>
+<p>Based on the analysis of summer average LST in Liaoning Province, China (Figure 6), Yang et al.(2021) proposed that LCZE (bare rock and paved) are more likely to increase LST, while LCZA(Dense trees) and LCZG(water) are more likely to decrease LST, aligning with the study of Guangzhou by Xu et al.&nbsp;(2022). In addition, regarding the urban classes of LCZs, Yang et al.&nbsp;(2022) suggested that higher numbers of summer LSTs occur in LCZ 2(compact mid-rise) and LCZ10(heavy industry).On the contrary, Xu et al.(2022) indicated that LCZ 3 (compact low-rise) and LCZ 8 (large low-rise) are the areas with the most severe thermal impact, further proving that there is heterogeneity in the effect of urban space on LST.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week04/Box_plots.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 6 The LCZs box plot with LST in Liaoning Province,China, 2017 and 2019(Source from Yang et al.(2021))</figcaption>
+</figure>
+</div>
+<p>To promote green town programmes, Singapore can adopt LCZs to identify the urban morphology with higher and lower thermal impact and conduct urban regeneration. Moreover, the LCZs method can also be applied to long-term monitoring for seasons, which can further propose prevention strategies for thermal impacts.</p>
+</section>
+<section id="cooling-roofs" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="cooling-roofs">2.2 “Cooling” Roofs</h2>
+<p>Given the high density and urbanisation rate in Singapore, making significant changes to the existing built environment is challenging. Thus, the adoption of “cooling” roofs has been recognized as a crucial strategy to address UHI effect in Singapore. Considering the significant influence of surface albedo on UHI, some scholars have explored solar reflective materials to alleviate this phenomenon (Despini et al., 2021). Using LANDSAT images of Chicago to compare albedo and Normalised difference vegetation index (NDVI), Mackey, Lee and Smith (2012) suggested that the reflective roofs show a more effective cooling effect than green items, such as green roofs, green spaces, and street trees. Besides, Taking the Municipality of Modena as a study area, Despini et al.( 2020) employed WorldView-3 (WV3) satellite images to obtain Surface Reflectance (SR) to calculate the average SR of different urban surfaces (Figure 7). Based on scenario predictions, the authors mentioned that the average temperature decreases by 1.2°C when cool materials on building roofs and cool coloured coatings on streets and parkings are applied.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week04/application_2_0.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure7 The example of RGB images (left) and Albedo images(right) in Modena (source form Despini et al.&nbsp;(2021)</figcaption>
+</figure>
+</div>
+<p>Moreover, Mushore, Odindi and Mutanga (2022) examine the colour of roof coating by adopting Sentinel 2 and Landsat images. They distinguish the roof colour and then discuss their thermal effect in a low-density residential area of Zimbabwe, Harare. Figure 8 displays their outcomes, and Figure 8(b) indicates that the coolest roofs were blue and the warmest roofs were green and red. Overall, the studies cited above employed remote sensing data to evaluate the effectiveness of mitigation measures on building roofs, which can be used to address the UHI effect in Singapore.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week04/application_2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 8 Research results on low-density residential areas in Zimbabwe.(a)The land use and land cover map (left) and roof colour map (right). (b) The variations of different urban elements. (Source from Moreover, Mushore, Odindi and Mutanga (2022))</figcaption>
 </figure>
 </div>
 </section>
 </section>
-<section id="application" class="level1 unnumbered">
-<h1 class="unnumbered">2.Application</h1>
-<p>Local climate Zone</p>
-<p>The Local climate zone (LCZ) introduced by Stewart and Oke() provide a new classification system of urban structure,which can apply to identofy the nature of urban climate.</p>
-<p>Based on their characteristics of urban morphology, built-up,surface cover (pervious and impervious). LCZs are categorised into 17 classes, namely 10 urban classes and 7 natural classes.</p>
-<p><img src="source/week04/local_climate_zone.png" class="img-fluid" alt="Figure 3 In support of SDGs 12 and SDG 13"> * The indicators for each class of LCZs</p>
-<ul>
-<li>The three process:
-<ul>
-<li>Collect site metadata Sentinel-1 and Landsat</li>
-<li>Define the thermal source area</li>
-<li>Select the local climate zone</li>
-</ul></li>
-<li>The case</li>
-</ul>
-</section>
 <section id="reflection" class="level1 unnumbered">
 <h1 class="unnumbered">3.Reflection</h1>
+<section id="linking-to-global-agendas-and-goals" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="linking-to-global-agendas-and-goals">3.1 Linking to global agendas and goals</h2>
+<p>In support of SDGs: 11 sustainable cities and commnuities: Make cities and human settlenents inclusive, safe, resillient and sustainable. 13 Climate action: Take urgent action to combat climate change and its impacts</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week04/SDG11_13.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 9 In support of SDGs 12 and SDG 13</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="reference" class="level1 unnumbered">
 <h1 class="unnumbered">4.Reference</h1>

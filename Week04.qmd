@@ -54,29 +54,45 @@ In the section of Resilient Future, Keeping Singapore cool is emphasised to miti
     -   Promoting HDB Green Towns programmes
     -   ......
 
-## 1.4 Linking to global agendas and goals {.unnumbered}
+# 2.Application {.unnumbered}
+
+Earth observation data on UHI has been widely discussed and its application can provide vital information to understand and address the challenges posed by UHI. Corresponding to Singapore cooling strategy, the section will introduce the mitigation strategies related to remotely sensed data from two perspectives, namely urban morphology and building roofs.
+
+## 2.1 Urban Form: Local Climate Zones (LCZs) {.unnumbered}
+
+The mitigation measures of UHI effect have been discussed with urban form. The Local climate zone (LCZ) introduced by Stewart and Oke(2012) provides a new classification system of urban structure,which can be applied to detect local climate changes. By using machine learning to identify and classify urban satellite images,LCZs are categorised into 17 classes, namely 10 urban classes and 7 natural classes (Figure 3). The classification criteria are diverse and can be adjusted according to the geographical characteristics of the study area. Based on the summary of Stewart and Oke(2012) the classification criteria mainly include 4 aspects, as shown in Figure 4.
+
+![Figure 3 The Classification of Local Climate Zones (Source from Bechtel,et al.(2017) and Stewart and Oke(2012))](source/week04/LCZ_classification.jpg)
+
+![Figure 4 The Classification Criteria of Local Climate Zones (Source from Stewart and Oke(2012))](source/week04/classification_criteria.png)
+
+The heat island effect on LCZs is mainly examined by combining the Land Surface Temperature(LST), which can be reflected in the research of authors Yang et al.(2021) and Xu et al.(2022). Initially, remote sensing data were distinguished using classification indicators, and machine learning methods were applied for supervised classification of remote sensing images to discern various categories of Local Climate Zones (LCZs) （Figure 5). Subsequently, the authors acquired LST data through processing remote sensing dataset and analysed the differentiated LST displayed by different types of LCZs.
+
+![Figure 5 The RS-based LCZs Map of Guangzhou City (Source from Xu et al.(2022))](source/week04/RS_Based_LCZ.png)
+
+Based on the analysis of summer average LST in Liaoning Province, China (Figure 6), Yang et al.(2021) proposed that LCZE (bare rock and paved) are more likely to increase LST, while LCZA(Dense trees) and LCZG(water) are more likely to decrease LST, aligning with the study of Guangzhou by Xu et al. (2022). In addition, regarding the urban classes of LCZs, Yang et al. (2022) suggested that higher numbers of summer LSTs occur in LCZ 2(compact mid-rise) and LCZ10(heavy industry).On the contrary, Xu et al.(2022) indicated that LCZ 3 (compact low-rise) and LCZ 8 (large low-rise) are the areas with the most severe thermal impact, further proving that there is heterogeneity in the effect of urban space on LST.
+
+![Figure 6 The LCZs box plot with LST in Liaoning Province,China, 2017 and 2019(Source from Yang et al.(2021)) ](source/week04/Box_plots.png)
+
+To promote green town programmes, Singapore can adopt LCZs to identify the urban morphology with higher and lower thermal impact and conduct urban regeneration. Moreover, the LCZs method can also be applied to long-term monitoring for seasons, which can further propose prevention strategies for thermal impacts.
+
+## 2.2 "Cooling" Roofs {.unnumbered}
+
+Given the high density and urbanisation rate in Singapore, making significant changes to the existing built environment is challenging. Thus, the adoption of "cooling" roofs has been recognized as a crucial strategy to address UHI effect in Singapore. Considering the significant influence of surface albedo on UHI, some scholars have explored solar reflective materials to alleviate this phenomenon (Despini et al., 2021). Using LANDSAT images of Chicago to compare albedo and Normalised difference vegetation index (NDVI), Mackey, Lee and Smith (2012) suggested that the reflective roofs show a more effective cooling effect than green items, such as green roofs, green spaces, and street trees. Besides, Taking the Municipality of Modena as a study area, Despini et al.( 2020) employed WorldView-3 (WV3) satellite images to obtain Surface Reflectance (SR) to calculate the average SR of different urban surfaces (Figure 7). Based on scenario predictions, the authors mentioned that the average temperature decreases by 1.2°C when cool materials on building roofs and cool coloured coatings on streets and parkings are applied.
+
+![Figure7 The example of RGB images (left) and Albedo images(right) in Modena (source form Despini et al. (2021)](source/week04/application_2_0.jpg)
+
+Moreover, Mushore, Odindi and Mutanga (2022) examine the colour of roof coating by adopting Sentinel 2 and Landsat images. They distinguish the roof colour and then discuss their thermal effect in a low-density residential area of Zimbabwe, Harare. Figure 8 displays their outcomes, and Figure 8(b) indicates that the coolest roofs were blue and the warmest roofs were green and red. Overall, the studies cited above employed remote sensing data to evaluate the effectiveness of mitigation measures on building roofs, which can be used to address the UHI effect in Singapore.
+
+![Figure 8 Research results on low-density residential areas in Zimbabwe.(a)The land use and land cover map (left) and roof colour map (right). (b) The variations of different urban elements. (Source from Moreover, Mushore, Odindi and Mutanga (2022))](source/week04/application_2.png)
+
+# 3.Reflection {.unnumbered}
+
+## 3.1 Linking to global agendas and goals {.unnumbered}
 
 In support of SDGs: 11 sustainable cities and commnuities: Make cities and human settlenents inclusive, safe, resillient and sustainable. 13 Climate action: Take urgent action to combat climate change and its impacts
 
-![Figure 3 In support of SDGs 12 and SDG 13](source/week04/SDG11_13.png)
-
-# 2.Application {.unnumbered}
-
-Local climate Zone
-
-The Local climate zone (LCZ) introduced by Stewart and Oke() provide a new classification system of urban structure,which can apply to identofy the nature of urban climate.
-
-Based on their characteristics of urban morphology, built-up,surface cover (pervious and impervious). LCZs are categorised into 17 classes, namely 10 urban classes and 7 natural classes.
-
-![Figure 3 In support of SDGs 12 and SDG 13](source/week04/local_climate_zone.png) \* The indicators for each class of LCZs
-
--   The three process:
-    -   Collect site metadata Sentinel-1 and Landsat
-    -   Define the thermal source area
-    -   Select the local climate zone
--   The case
-
-# 3.Reflection {.unnumbered}
+![Figure 9 In support of SDGs 12 and SDG 13](source/week04/SDG11_13.png) 
 
 # 4.Reference {.unnumbered}
 
