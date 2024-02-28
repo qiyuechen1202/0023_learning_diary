@@ -34,10 +34,10 @@ I filtered Landsat 8 dataset based on dates, cloud cover, and vector boundary da
 
 -  Analysing
 
-::: {layout-ncol=2}
+The next step will introduce
+
+
 ![Figure 2 glcm of Delhi ](source/week06/glcm_1.png)
 ![Figure 3 NDVI of Delhi ](source/week06/NDVI_1.png)
-:::
-
 
 ![Figure 4 PCA1 of Delhi ](source/week06/PCA1_1.png)
