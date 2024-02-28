@@ -32,7 +32,7 @@ I filtered Landsat 8 dataset based on dates, cloud cover, and vector boundary da
 
 -   Analysing
 
-After Preprocessing, the image data is conducted analysis. Figure 2 presents the result of the grey-level co-occurrence matrix (GLCM) texture displayed by surface reflectance (SR). It seems that the airport area in the southeastern region shows a high SR. In addition, Normalised Difference Vegetation Index (NDVI) is calculated and visualised using GEE platform(Figure 3)
+After Preprocessing, the image data is conducted analysis. Figure 2 presents the result of the grey-level co-occurrence matrix (GLCM) texture displayed by surface reflectance (SR). It seems that the airport area in the southeastern region shows a high SR. In addition, Normalised Difference Vegetation Index (NDVI) is calculated and visualised using GEE platform (Figure 3).
 
 ::: {layout-ncol="2"}
 ![Figure 2 glcm of Delhi](source/week06/glcm.png)
