@@ -39,14 +39,14 @@
     "href": "Week04.html",
     "title": "4  Week04",
     "section": "",
-    "text": "1.Content Summary: Policy Challenge\nEarth observation data on UHI has been widely discussed and its application can provide vital information to understand and address the challenges posed by UHI. Corresponding to Singapore cooling strategy, the section will introduce the mitigation strategies related to remotely sensed data from two perspectives, namely urban morphology and building roofs."
+    "text": "1.Content Summary: Policy Challenge\nEarth observation data on UHI has been widely discussed and its application can provide vital information to understand and address the challenges posed by UHI. Corresponding to Singapore cooling strategy, the section will introduce the mitigation strategies related to remotely sensed data from two perspectives, namely urban morphology and building roofs.\nneed to be finished"
   },
   {
     "objectID": "Week06.html",
     "href": "Week06.html",
     "title": "5  Week06",
     "section": "",
-    "text": "6 Week06"
+    "text": "Content Summary: Google Earth Engine"
   },
   {
     "objectID": "Week01.html#basic-raster-image-processing-and-statistics",
@@ -159,5 +159,19 @@
     "title": "4  Week04",
     "section": "2.1 Urban Form: Local Climate Zones (LCZs)",
     "text": "2.1 Urban Form: Local Climate Zones (LCZs)\nThe mitigation measures of UHI effect have been discussed with urban form. The Local climate zone (LCZ) introduced by Stewart and Oke(2012) provides a new classification system of urban structure,which can be applied to detect local climate changes. By using machine learning to identify and classify urban satellite images,LCZs are categorised into 17 classes, namely 10 urban classes and 7 natural classes (Figure 3). The classification criteria are diverse and can be adjusted according to the geographical characteristics of the study area. Based on the summary of Stewart and Oke(2012) the classification criteria mainly include 4 aspects, as shown in Figure 4.\n\n\n\nFigure 3 The Classification of Local Climate Zones (Source from Bechtel,et al.(2017) and Stewart and Oke(2012))\n\n\n\n\n\nFigure 4 The Classification Criteria of Local Climate Zones (Source from Stewart and Oke(2012))\n\n\nThe heat island effect on LCZs is mainly examined by combining the Land Surface Temperature(LST), which can be reflected in the research of authors Yang et al.(2021) and Xu et al.(2022). Initially, remote sensing data were distinguished using classification indicators, and machine learning methods were applied for supervised classification of remote sensing images to discern various categories of Local Climate Zones (LCZs) （Figure 5). Subsequently, the authors acquired LST data through processing remote sensing dataset and analysed the differentiated LST displayed by different types of LCZs.\n\n\n\nFigure 5 The RS-based LCZs Map of Guangzhou City (Source from Xu et al.(2022))\n\n\nBased on the analysis of summer average LST in Liaoning Province, China (Figure 6), Yang et al.(2021) proposed that LCZE (bare rock and paved) are more likely to increase LST, while LCZA(Dense trees) and LCZG(water) are more likely to decrease LST, aligning with the study of Guangzhou by Xu et al. (2022). In addition, regarding the urban classes of LCZs, Yang et al. (2022) suggested that higher numbers of summer LSTs occur in LCZ 2(compact mid-rise) and LCZ10(heavy industry).On the contrary, Xu et al.(2022) indicated that LCZ 3 (compact low-rise) and LCZ 8 (large low-rise) are the areas with the most severe thermal impact, further proving that there is heterogeneity in the effect of urban space on LST.\n\n\n\nFigure 6 The LCZs box plot with LST in Liaoning Province,China, 2017 and 2019(Source from Yang et al.(2021))\n\n\nTo promote green town programmes, Singapore can adopt LCZs to identify the urban morphology with higher and lower thermal impact and conduct urban regeneration. Moreover, the LCZs method can also be applied to long-term monitoring for seasons, which can further propose prevention strategies for thermal impacts."
+  },
+  {
+    "objectID": "Week06.html#what-is-the-google-earth-enginegee",
+    "href": "Week06.html#what-is-the-google-earth-enginegee",
+    "title": "5  Week06",
+    "section": "1.1 What is the Google Earth Engine(GEE)",
+    "text": "1.1 What is the Google Earth Engine(GEE)\nBased on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number. ## 1.2 Why need to use GEE ? The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020), Corelick et al.(2017), and Ollie’s lecture.\n\nCloud-based Infrastructure\n\nA free cloud-based service.\nTimesaving: The characteristic of automatic parallel processing and fast computational platform can reduce the time-consuming for analysing big datasets.\nFast Visualisation: GEE stores and processes RS data by using a pyramid concept at different pixel resolutions, which can effectively and rapidly visualise RS processed imagery.\n\nDataset\n\nData Availability: GEE includes a large repository of publicly available geospatial datasets, including Landsat-8, Sentinel-2, Sentinel-3, and so on.\nCapability of uploading data by users.\nAutomatically convert data into Mercator projection (EPSG: 3857).\nPowerful Datasets: It also has some datasets that have been preprocessed or corrected and derivative products (e.g.NDVI, Landsat 4–8 surface reflectance, and UMD global forest change).\n\nFunction\n\nDiverse Analysis Methods: GEE library provides diverse functions and algorithms for analysing datasets, including simple mathematical functions. geostatistics, machine learning (supervised and unsupervised), and image processing operations."
+  },
+  {
+    "objectID": "Week06.html#how-to-use-gee",
+    "href": "Week06.html#how-to-use-gee",
+    "title": "5  Week06",
+    "section": "5.1 1.3 How to use GEE ?",
+    "text": "5.1 1.3 How to use GEE ?\nIn terms of practical, I applied RS imagery of Delhi, India collected by Landsat 8 Satellite to discuss the application of the GEE platform.\n\nPreprocessing\n\nI filtered Landsat 8 dataset based on dates, cloud cover, and vector boundary data. Secondly, the true colour image was visualised by parameters( B4, B3, B2). Following this, the mean of all overlapping pixels was calculated to merge the three images and reduce the impact of extreme values in the image on the statistical results (Dimensionality Reduction). Finally, the image data was clipped using the vector boundary data, as illustrated in Figure 1.\n - Analysing\n\n\n\n\n\n\n\nFigure 2 glcm of Delhi\n\n\n\n\nFigure 5.1: \n\n\n\n\n\nFigure 4 PCA1 of Delhi"
   }
 ]

@@ -2,4 +2,42 @@
 title: "Week06"
 ---
 
-# Week06
+# Content Summary: Google Earth Engine {.unnumbered}
+
+
+## 1.1 What is the Google Earth Engine(GEE) {.unnumbered}
+Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number.
+## 1.2  Why need to use GEE ?
+The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020), Corelick et al.(2017), and Ollie’s lecture.
+
+-  Cloud-based Infrastructure
+   1. A free cloud-based service.
+   2. Timesaving: The characteristic of automatic parallel processing and fast computational platform can reduce the time-consuming for analysing big datasets.
+   3. Fast Visualisation: GEE stores and processes RS data by using a pyramid concept at different pixel resolutions, which can effectively and rapidly visualise RS processed imagery.
+-  Dataset
+   1. Data Availability: GEE includes a large repository of publicly available geospatial datasets, including Landsat-8, Sentinel-2, Sentinel-3, and so on.
+   2. Capability of uploading data by users.
+   3. Automatically convert data into Mercator projection (EPSG: 3857).
+   4. Powerful Datasets: It also has some datasets that have been preprocessed or corrected and derivative products (e.g.NDVI, Landsat 4–8 surface reflectance, and UMD global forest change).
+-  Function
+   1. Diverse Analysis Methods: GEE library provides diverse functions and algorithms for analysing datasets, including simple mathematical functions. geostatistics, machine learning (supervised and unsupervised), and image processing operations.
+
+## 1.3 How to use GEE ?
+In terms of practical, I applied RS imagery of Delhi, India collected by Landsat 8 Satellite to discuss the application of the GEE platform. 
+
+-  Preprocessing
+
+I filtered Landsat 8 dataset based on dates, cloud cover, and vector boundary data. Secondly, the true colour image was visualised by parameters( B4, B3, B2). Following this, the mean of all overlapping pixels was calculated to merge the three images and reduce the impact of extreme values in the image on the statistical results (Dimensionality Reduction). Finally, the image data was clipped using the vector boundary data, as illustrated in Figure 1.
+
+![Figure 1 The Preprocessing of Delhi](source/week06/processing_1.gif)
+-  Analysing
+
+::: {#fig-elephants layout-ncol=2}
+
+![Figure 2 glcm of Delhi ](source/week06/glcm_1.png)
+
+![Figure 3 NDVI of Delhi ](source/week06/NDVI_1.png)
+:::
+
+
+![Figure 4 PCA1 of Delhi ](source/week06/PCA1_1.png)
