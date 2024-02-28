@@ -30,14 +30,16 @@ I filtered Landsat 8 dataset based on dates, cloud cover, and vector boundary da
 
 ![Figure 1 The Preprocessing of Delhi](source/week06/processing_1.gif)
 
--  Analysing
+-   Analysing
 
-::: {layout-ncol=2}
+After Preprocessing, the image data is conducted analysis. Figure 2 presents the result of the grey-level co-occurrence matrix (GLCM) texture displayed by surface reflectance (SR). It seems that the airport area in the southeastern region shows a high SR. In addition, Normalised Difference Vegetation Index (NDVI) is calculated and visualised using GEE platform(Figure 3)
+
+::: {layout-ncol="2"}
 ![Figure 2 glcm of Delhi](source/week06/glcm.png)
 
 ![Figure 3 NDVI of Delhi](source/week06/NDVI.png)
-
 :::
 
+Furthermore,GEE also can conduct Principal Component Analysis (PCA), and Figure 4 demonstrates the first component of PCA. Despite the code of the PCA function is complex, it is undeniable that in comparison to SANP, GEE processes images very quickly and does not require local memory.
 
 ![Figure 4 PCA1 of Delhi](source/week06/PCA1.png)
