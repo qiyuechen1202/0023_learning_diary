@@ -2,6 +2,7 @@
 title: "Week06"
 ---
 
+
 # Content Summary: Google Earth Engine {.unnumbered}
 
 
@@ -30,12 +31,11 @@ In terms of practical, I applied RS imagery of Delhi, India collected by Landsat
 I filtered Landsat 8 dataset based on dates, cloud cover, and vector boundary data. Secondly, the true colour image was visualised by parameters( B4, B3, B2). Following this, the mean of all overlapping pixels was calculated to merge the three images and reduce the impact of extreme values in the image on the statistical results (Dimensionality Reduction). Finally, the image data was clipped using the vector boundary data, as illustrated in Figure 1.
 
 ![Figure 1 The Preprocessing of Delhi](source/week06/processing_1.gif)
+
 -  Analysing
 
-::: {#fig-elephants layout-ncol=2}
-
+::: {layout-ncol=2}
 ![Figure 2 glcm of Delhi ](source/week06/glcm_1.png)
-
 ![Figure 3 NDVI of Delhi ](source/week06/NDVI_1.png)
 :::
 
