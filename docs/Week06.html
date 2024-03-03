@@ -151,11 +151,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#content-summary-google-earth-engine" id="toc-content-summary-google-earth-engine" class="nav-link active" data-scroll-target="#content-summary-google-earth-engine">Content Summary: Google Earth Engine</a>
+  <li><a href="#content-summary-google-earth-engine" id="toc-content-summary-google-earth-engine" class="nav-link active" data-scroll-target="#content-summary-google-earth-engine">1. Content Summary: Google Earth Engine</a>
   <ul class="collapse">
   <li><a href="#what-is-the-google-earth-enginegee" id="toc-what-is-the-google-earth-enginegee" class="nav-link" data-scroll-target="#what-is-the-google-earth-enginegee">1.1 What is the Google Earth Engine(GEE)</a></li>
   <li><a href="#how-to-use-gee" id="toc-how-to-use-gee" class="nav-link" data-scroll-target="#how-to-use-gee"><span class="header-section-number">5.1</span> 1.3 How to use GEE ?</a></li>
   </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">2. Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">3. Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">4. Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -180,27 +183,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <section id="content-summary-google-earth-engine" class="level1 unnumbered">
-<h1 class="unnumbered">Content Summary: Google Earth Engine</h1>
+<h1 class="unnumbered">1. Content Summary: Google Earth Engine</h1>
 <section id="what-is-the-google-earth-enginegee" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="what-is-the-google-earth-enginegee">1.1 What is the Google Earth Engine(GEE)</h2>
 <p>Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number. ## 1.2 Why need to use GEE ? The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020), Corelick et al.(2017), and Ollie’s lecture.</p>
 <ul>
-<li>Cloud-based Infrastructure
+<li><strong>Cloud-based Infrastructure</strong>
 <ol type="1">
 <li>A free cloud-based service.</li>
 <li>Timesaving: The characteristic of automatic parallel processing and fast computational platform can reduce the time-consuming for analysing big datasets.</li>
 <li>Fast Visualisation: GEE stores and processes RS data by using a pyramid concept at different pixel resolutions, which can effectively and rapidly visualise RS processed imagery.</li>
 </ol></li>
-<li>Dataset
+<li><strong>Dataset</strong>
 <ol type="1">
 <li>Data Availability: GEE includes a large repository of publicly available geospatial datasets, including Landsat-8, Sentinel-2, Sentinel-3, and so on.</li>
 <li>Capability of uploading data by users.</li>
 <li>Automatically convert data into Mercator projection (EPSG: 3857).</li>
 <li>Powerful Datasets: It also has some datasets that have been preprocessed or corrected and derivative products (e.g.NDVI, Landsat 4–8 surface reflectance, and UMD global forest change).</li>
 </ol></li>
-<li>Function
+<li><strong>Function</strong>
 <ol type="1">
 <li>Diverse Analysis Methods: GEE library provides diverse functions and algorithms for analysing datasets, including simple mathematical functions. geostatistics, machine learning (supervised and unsupervised), and image processing operations.</li>
+</ol></li>
+<li><strong>Application Programming Interface (API)</strong>
+<ol type="1">
+<li>Combined with a powerful web-based programming interface.</li>
+<li>RS data can be accessed through the JavaScript and Python API.</li>
 </ol></li>
 </ul>
 </section>
@@ -248,9 +256,33 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Figure 4 PCA1 of Delhi</figcaption>
 </figure>
 </div>
-
-
 </section>
+</section>
+<section id="application" class="level1 unnumbered">
+<h1 class="unnumbered">2. Application</h1>
+<p>GEE provides an opportunity for large-scale geospatial analysis, and has found extensive application. A study examining 450 GEE articles by Amani et al.(2020) summarised the primary scope of GEE applications (Figure 5), indicating that the GEE platform is mainly utilised in the fields of vegetation, agriculture, and hydrology category.</p>
+<p><img src="source/week06/GEEapplication.jpg" class="img-fluid" alt="Figure 5 GEE Application"> In terms of dataset application, Tamiminia et al.&nbsp;(2020) demonstrated, in a systematic review of 348 GEE articles, that 90% of GEE research adopted remote sensing datasets and conducted a series of Machine Learning, including classification, regression, and other methods (e.g.&nbsp;feature extraction) (Figure 6). The findings also revealed that Landsat (especially Landsat 8) and MODIS, as optical imagery with medium spatial resolution, were most popular in GEE studies. Taking the study of Xie et al.&nbsp;(2019) as an example, the time-series Landsat dataset was adopted on the GEE platform to monitor vegetation dynamics by calculating indices, and the GEE application significantly reduced the time and effort spent on data access, processing, and its storage cost. Xie et al.(2019) further mentioned that GEE can contribute to the efficient collaboration and sharing of scripts, allowing scholars to apply codes and access results easily and freely. Additionally, Tamiminia et al.&nbsp;(2020) also revealed that 10% of GEE studies analysed ready-to-use products, mainly focusing on vegetation indices, land cover, Hansen global forest change, and Digital Elevation Models (DEMs). For instance, to capture cropland mapping of Africa, Xiong et al.&nbsp;(2017) applied the 16-day time-series of Moderate Resolution Imaging Spectroradiometer (MODIS) NDVI composited data at 250-m resolution to develop the algorithm on GEE platform.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week06/GEEapplication_2.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 6 GEE Application</figcaption>
+</figure>
+</div>
+</section>
+<section id="reflection" class="level1 unnumbered">
+<h1 class="unnumbered">3. Reflection</h1>
+</section>
+<section id="reference" class="level1 unnumbered">
+<h1 class="unnumbered">4. Reference</h1>
+<div style="overflow-y: scroll; height: 300px;">
+<p>Amani, M., Ghorbanian, A., Ahmadi, S. A., Kakooei, M., Moghimi, A., Mirmazloumi, S. M., Moghaddam, S. H. A., Mahdavi, S., Ghahremanloo, M., Parsian, S., Wu, Q. and Brisco, B. (2020). ‘Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review’. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp.&nbsp;5326–5350. doi: 10.1109/JSTARS.2020.3021052.</p>
+<p>Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R. (2017). ‘Google Earth Engine: Planetary-scale geospatial analysis for everyone’. Remote Sensing of Environment, 202, pp.&nbsp;18–27. doi: 10.1016/j.rse.2017.06.031.</p>
+<p>Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S. and Brisco, B. (2020). ‘Google Earth Engine for geo-big data applications: A meta-analysis and systematic review’. ISPRS Journal of Photogrammetry and Remote Sensing, 164, pp.&nbsp;152–170. doi: 10.1016/j.isprsjprs.2020.04.001.</p>
+<p>Xie, Z., Phinn, S. R., Game, E. T., Pannell, D. J., Hobbs, R. J., Briggs, P. R. and McDonald-Madden, E. (2019). ‘Using Landsat observations (1988–2017) and Google Earth Engine to detect vegetation cover changes in rangelands - A first step towards identifying degraded lands for conservation’. Remote Sensing of Environment, 232, p.&nbsp;111317. doi: 10.1016/j.rse.2019.111317.</p>
+<p>Xiong, J., Thenkabail, P. S., Gumma, M. K., Teluguntla, P., Poehnelt, J., Congalton, R. G., Yadav, K. and Thau, D. (2017). ‘Automated cropland mapping of continental Africa using Google Earth Engine cloud computing’. ISPRS Journal of Photogrammetry and Remote Sensing, 126, pp.&nbsp;225–244. doi: 10.1016/j.isprsjprs.2017.01.019.</p>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -2,23 +2,26 @@
 title: "Week06"
 ---
 
-# Content Summary: Google Earth Engine {.unnumbered}
+# 1. Content Summary: Google Earth Engine {.unnumbered}
 
 ## 1.1 What is the Google Earth Engine(GEE) {.unnumbered}
 
 Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number. \## 1.2 Why need to use GEE ? The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020), Corelick et al.(2017), and Ollie's lecture.
 
--   Cloud-based Infrastructure
+-   **Cloud-based Infrastructure**
     1.  A free cloud-based service.
     2.  Timesaving: The characteristic of automatic parallel processing and fast computational platform can reduce the time-consuming for analysing big datasets.
     3.  Fast Visualisation: GEE stores and processes RS data by using a pyramid concept at different pixel resolutions, which can effectively and rapidly visualise RS processed imagery.
--   Dataset
+-   **Dataset**
     1.  Data Availability: GEE includes a large repository of publicly available geospatial datasets, including Landsat-8, Sentinel-2, Sentinel-3, and so on.
     2.  Capability of uploading data by users.
     3.  Automatically convert data into Mercator projection (EPSG: 3857).
     4.  Powerful Datasets: It also has some datasets that have been preprocessed or corrected and derivative products (e.g.NDVI, Landsat 4--8 surface reflectance, and UMD global forest change).
--   Function
+-   **Function**
     1.  Diverse Analysis Methods: GEE library provides diverse functions and algorithms for analysing datasets, including simple mathematical functions. geostatistics, machine learning (supervised and unsupervised), and image processing operations.
+-   **Application Programming Interface (API)**
+    1.  Combined with a powerful web-based programming interface.
+    2.  RS data can be accessed through the JavaScript and Python API.
 
 ## 1.3 How to use GEE ?
 
@@ -43,3 +46,30 @@ After Preprocessing, the image data is conducted analysis. Figure 2 presents the
 Furthermore,GEE also can conduct Principal Component Analysis (PCA), and Figure 4 demonstrates the first component of PCA. Despite the code of the PCA function is complex, it is undeniable that in comparison to SANP, GEE processes images very quickly and does not require local memory.
 
 ![Figure 4 PCA1 of Delhi](source/week06/PCA1.png)
+
+# 2. Application {.unnumbered}
+
+GEE provides an opportunity for large-scale geospatial analysis, and has found extensive application. A study examining 450 GEE articles by Amani et al.(2020) summarised the primary scope of GEE applications (Figure 5), indicating that the GEE platform is mainly utilised in the fields of vegetation, agriculture, and hydrology category.
+
+![Figure 5 GEE Application](source/week06/GEEapplication.jpg)
+In terms of dataset application, Tamiminia et al. (2020) demonstrated, in a systematic review of 348 GEE articles, that 90% of GEE research adopted remote sensing datasets and conducted a series of Machine Learning, including classification, regression, and other methods (e.g. feature extraction) (Figure 6). The findings also revealed that Landsat (especially  Landsat 8) and MODIS, as optical imagery with medium spatial resolution, were most popular in GEE studies. Taking the study of Xie et al. (2019) as an example, the time-series Landsat dataset was adopted on the GEE platform to monitor vegetation dynamics by calculating indices, and the GEE application significantly reduced the time and effort spent on data access, processing, and its storage cost. Xie et al.(2019) further mentioned that GEE can contribute to the efficient collaboration and sharing of scripts, allowing scholars to apply codes and access results easily and freely. Additionally, Tamiminia et al. (2020) also revealed that 10% of GEE studies analysed ready-to-use products, mainly focusing on vegetation indices, land cover, Hansen global forest change, and Digital Elevation Models (DEMs). For instance, to capture cropland mapping of Africa, Xiong et al. (2017) applied the 16-day time-series of Moderate Resolution Imaging Spectroradiometer (MODIS) NDVI composited data at 250-m resolution to develop the algorithm on GEE platform.
+
+![Figure 6 GEE Application](source/week06/GEEapplication_2.jpg)
+
+# 3. Reflection {.unnumbered}
+
+# 4. Reference {.unnumbered}
+::: {style="overflow-y: scroll; height: 300px;"}
+
+Amani, M., Ghorbanian, A., Ahmadi, S. A., Kakooei, M., Moghimi, A., Mirmazloumi, S. M., Moghaddam, S. H. A., Mahdavi, S., Ghahremanloo, M., Parsian, S., Wu, Q. and Brisco, B. (2020). ‘Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review’. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp. 5326–5350. doi: 10.1109/JSTARS.2020.3021052.
+
+
+Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R. (2017). ‘Google Earth Engine: Planetary-scale geospatial analysis for everyone’. Remote Sensing of Environment, 202, pp. 18–27. doi: 10.1016/j.rse.2017.06.031.
+
+Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S. and Brisco, B. (2020). ‘Google Earth Engine for geo-big data applications: A meta-analysis and systematic review’. ISPRS Journal of Photogrammetry and Remote Sensing, 164, pp. 152–170. doi: 10.1016/j.isprsjprs.2020.04.001.
+
+
+Xie, Z., Phinn, S. R., Game, E. T., Pannell, D. J., Hobbs, R. J., Briggs, P. R. and McDonald-Madden, E. (2019). ‘Using Landsat observations (1988–2017) and Google Earth Engine to detect vegetation cover changes in rangelands - A first step towards identifying degraded lands for conservation’. Remote Sensing of Environment, 232, p. 111317. doi: 10.1016/j.rse.2019.111317.
+
+Xiong, J., Thenkabail, P. S., Gumma, M. K., Teluguntla, P., Poehnelt, J., Congalton, R. G., Yadav, K. and Thau, D. (2017). ‘Automated cropland mapping of continental Africa using Google Earth Engine cloud computing’. ISPRS Journal of Photogrammetry and Remote Sensing, 126, pp. 225–244. doi: 10.1016/j.isprsjprs.2017.01.019.
+:::
