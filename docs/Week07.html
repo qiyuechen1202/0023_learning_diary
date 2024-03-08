@@ -167,12 +167,12 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#unsupervised-classification" id="toc-unsupervised-classification" class="nav-link" data-scroll-target="#unsupervised-classification">1.1 Unsupervised Classification</a>
   <ul class="collapse">
-  <li><a href="#the-fundamental-steps" id="toc-the-fundamental-steps" class="nav-link" data-scroll-target="#the-fundamental-steps">1.1.1 The fundamental steps</a></li>
+  <li><a href="#the-fundamental-steps" id="toc-the-fundamental-steps" class="nav-link" data-scroll-target="#the-fundamental-steps">1.1.1 The Fundamental Steps</a></li>
   <li><a href="#the-classifiers" id="toc-the-classifiers" class="nav-link" data-scroll-target="#the-classifiers">1.1.2 The Classifiers</a></li>
   </ul></li>
   <li><a href="#supervised-classification" id="toc-supervised-classification" class="nav-link" data-scroll-target="#supervised-classification">1.2 Supervised Classification</a>
   <ul class="collapse">
-  <li><a href="#the-processing-steps" id="toc-the-processing-steps" class="nav-link" data-scroll-target="#the-processing-steps">1.2.1 The processing steps</a></li>
+  <li><a href="#the-fundamental-steps-1" id="toc-the-fundamental-steps-1" class="nav-link" data-scroll-target="#the-fundamental-steps-1">1.2.1 The Fundamental Steps</a></li>
   <li><a href="#the-classifiers-1" id="toc-the-classifiers-1" class="nav-link" data-scroll-target="#the-classifiers-1">1.2.2 The Classifiers</a></li>
   <li><a href="#comparison-of-cart-and-rf" id="toc-comparison-of-cart-and-rf" class="nav-link" data-scroll-target="#comparison-of-cart-and-rf">1.2.3 Comparison of CART and RF</a></li>
   </ul></li>
@@ -208,17 +208,17 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="unnumbered">1. Content Summary: Classification Ⅰ</h1>
 <p>The application of machine learning in remote sensing classification is crucial, due to its efficiency in extracting various features from the imagery datasets. Considering the study at large geographical scales, manual processing is prone to errors and time-consuming. Machine learning effectively addresses the challenges by automating tasks and obtaining highly accurate results, which can improve efficiency and reduce human intervention. Its application has notably accelerated the progress of remote sensing research, particularly in large geographical areas, being utilised for tasks like land cover classification and extracting features such as urban green space and forest fires.</p>
 <p>However, it is worth noting that machine learning methods are diverse and demonstrate varied results in their applications. Therefore, understanding these machine learning methods is crucial for our application in remote sensing research. Next, in terms of the methods of image classification, I will review the supervised classification and unsupervised classification methods mentioned in the lecture.</p>
-<p><a href="https://gisgeography.com/supervised-unsupervised-classification-arcgis/">GISGeograph(2023)</a> summarised the definitions of supervised and unsupervised classification and the differences between them, as shown in Tbale 1.</p>
+<p><a href="https://gisgeography.com/supervised-unsupervised-classification-arcgis/">GISGeography(2023)</a> summarised the definitions of supervised and unsupervised classification and the differences between them, as shown in Tbale 1.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="source/week07/table1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Table 1 Comparison between supervised classification and unsupervised classification. Source from <a href="https://gisgeography.com/supervised-unsupervised-classification-arcgis/">GISGeograph(2023)</a></figcaption>
+<figcaption class="figure-caption">Table 1 Comparison between supervised classification and unsupervised classification. Source from <a href="https://gisgeography.com/supervised-unsupervised-classification-arcgis/">GISGeography(2023)</a></figcaption>
 </figure>
 </div>
 <section id="unsupervised-classification" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="unsupervised-classification">1.1 Unsupervised Classification</h2>
 <section id="the-fundamental-steps" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="the-fundamental-steps">1.1.1 The fundamental steps</h3>
+<h3 class="unnumbered anchored" data-anchor-id="the-fundamental-steps">1.1.1 The Fundamental Steps</h3>
 <p>The fundamental steps for unsupervised classification involve:</p>
 <ol type="1">
 <li>Create Cluster</li>
@@ -244,8 +244,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="supervised-classification" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="supervised-classification">1.2 Supervised Classification</h2>
-<section id="the-processing-steps" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="the-processing-steps">1.2.1 The processing steps</h3>
+<section id="the-fundamental-steps-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="the-fundamental-steps-1">1.2.1 The Fundamental Steps</h3>
 <p>The fundamental steps for supervised classification are as follows:</p>
 <ol type="1">
 <li>Class Definition:<br> Assemble features which have a property that stores the known class label and properties storing numeric values for the predictors.<br></li>
@@ -261,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><strong>Classification and Regression Tree (CART)</strong></li>
 </ol>
-<p>CART is a tree-based framework and consists of classification trees and regression trees. It can be used to divide the dataset into subsets as a tree structure, which can capture different classes (for classification)and predict the value (for regression ). Its application can capture patterns and regularities in data sets to maximise the homogeneity or similarity within each group, making the results more accurate. Gini impurity (for classification) and SME(Squared Mean Error, for regression ) in CART serve as criteria for classifying the subset aiming to minimise impurity or error of resulting subsets. In Figure 1, <a href="https://blogs.fu-berlin.de/reseda/random-forest/">RESEDA(no date)</a> provides an tree-structure example for CART applied for Land classification,which can help me to understand the processing.</p>
+<p>CART is a tree-based framework and consists of classification trees and regression trees. It can be used to divide the dataset into subsets as a tree structure, which can capture different classes (for classification)and predict the value (for regression). Its application can capture patterns and regularities in data sets to maximise the homogeneity or similarity within each group, making the results more accurate. Gini impurity (for classification) and SME(Squared Mean Error, for regression ) in CART serve as criteria for classifying the subset aiming to minimise impurity or error of resulting subsets. In Figure 1, <a href="https://blogs.fu-berlin.de/reseda/random-forest/">RESEDA(no date)</a> provides an tree-structure example for CART applied for Land classification,which can help me to understand the processing.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="source/week07/CART.png" class="img-fluid figure-img"></p>
@@ -284,13 +284,13 @@ The Advantages and Disadvantages of CART
 <ul>
 <li><p><strong>Advantages</strong>:</p>
 <ul>
-<li><em>Interpretability</em> : relatively easy to understand (compared to many trees).</li>
-<li><em>Flexibility</em> : no assumptions of data distribution and no transformations needed. <br></li>
+<li>Interpretability : relatively easy to understand (compared to many trees).</li>
+<li>Flexibility : no assumptions of data distribution and no transformations needed. <br></li>
 </ul></li>
 <li><p><strong>Disadvantages</strong>:</p>
 <ul>
-<li><em>Lack of smoothness</em> : slight changes in the predicators can have a big impact on the response.</li>
-<li><em>Tendency of overfitting</em> : meaning that the tree fits well to the training data but is unable to generalise to new data. Thus, it is essential to cut the tree levels to improve the generalisation ability of CART (Lawrence and Wright, 2001) <br></li>
+<li>Lack of smoothness : slight changes in the predicators can have a big impact on the response.</li>
+<li>Tendency of overfitting : meaning that the tree fits well to the training data but is unable to generalise to new data. Thus, it is essential to cut the tree levels to improve the generalisation ability of CART (Lawrence and Wright, 2001) <br></li>
 </ul></li>
 </ul>
 </div>
@@ -304,7 +304,7 @@ The Advantages and Disadvantages of CART
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="source/week07/Workflow-random-forest-classifier_W640.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure 2 The Workflow of RF. Source from (Bhatnagar, Gill and Ghosh, 2020)</figcaption>
+<figcaption class="figure-caption">Figure 2 The Workflow of RF. Source from Bhatnagar, Gill and Ghosh (2020)</figcaption>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -341,13 +341,57 @@ The Advantages and Disadvantages of RF
 </ol>
 <p>In addition to CART and RF, the following classifiers were introduced in the lecture. Although their definition and applications are a bit complicated for me, they are very interesting and offer more possibilities to image classification. I hope to deepen my understanding of them in future studies.</p>
 <ul>
-<li><p><strong>Maximum Likelihood</strong>:</p></li>
-<li><p><strong>Support Vector Machines</strong>:</p></li>
+<li><strong>Maximum Likelihood</strong>:</li>
 </ul>
+<p>The maximum likelihood is a decision rule classifier. It assigns pixels in an image to different landover classes based on their spectral characteristics, using probabilities and decision rules. The goal is to maximise the likelihood of observed pixel values given class statistics (MacLachlan, 2024). The advantages of the classifier are simple and robust enough to accommodate large datasets and the modifications (Manuel Núñez et al., 2019).</p>
+<ul>
+<li><strong>Support Vector Machines(SVM)</strong>:</li>
+</ul>
+<p>As shown in Figure 3, SVM is a linear binary classifier - like logistic regression(MacLachlan, 2024).The algorithm can be used for linearly and nonlinearly separable data, which primarily work for classification problems (Srivastava, 2021). Based on the collection of labelled data instances, the SVM training algorithm endeavours to identify a hyperplane that divides the dataset into a distinct, pre-defined number of classes in accordance with the patterns observed in the training examples (Vapnik, 2006).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week07/SVM.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 3 Linear support vector machine classifier . Source from Mountrakis, Im and Ogole (2011 )</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The Advantages and Disadvantages of SVM
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Referring to <a href="https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/">Geeksforgeeks(2023)</a>, the main advantages and disadvantages of SVM are as follows:</p>
+<ul>
+<li><p><strong>Advantages</strong>:</p>
+<ul>
+<li>Handling in High-Dimensional Spaces and small datasets.</li>
+<li>Modelling non-linear decision boundaries.</li>
+<li>Robust to Overfitting (Leading to better generalisation to unseen data).</li>
+<li>…</li>
+</ul></li>
+<li><p><strong>Disadvantages</strong>:</p>
+<ul>
+<li>It is not suitable for very large data sets with many features as the algorithm is computationally intensive.</li>
+<li>Limited to Binary Classification.</li>
+<li>Limited interpretability.</li>
+<li>Choice of Kernel</li>
+<li>…</li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
 </section>
 <section id="comparison-of-cart-and-rf" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="comparison-of-cart-and-rf">1.2.3 Comparison of CART and RF</h3>
-<p>Based on the code provided in the practical, I also tried to use Landsat 8 data to classify land use in Shenzhen by CART (Figure ) and RF (Figure ). Compared to</p>
+<p>Based on the code provided in the practical, I also tried to use Landsat 8 data to classify land use in Shenzhen by CART (Figure ) and RF (Figure ).</p>
 </section>
 </section>
 </section>
@@ -359,6 +403,22 @@ The Advantages and Disadvantages of RF
 </section>
 <section id="reference" class="level1 unnumbered">
 <h1 class="unnumbered">4. Reference</h1>
+<div style="overflow-y: scroll; height: 300px;">
+<p>Arai, K. and Bu, X. (2007). ‘ISODATA clustering with parameter (threshold for merge and split) estimation based on GA: Genetic Algorithm’, <em>Reports of the Faculty of Science and Engineering Saga University</em>,36.</p>
+<p>Aziz, G., Minallah, N., Saeed, A., Frnda, J. and Khan, W. (2024). ‘Remote sensing based forest cover classification using machine learning’. Scientific Reports, 14 (1), p.&nbsp;69. doi: 10.1038/s41598-023-50863-1.</p>
+<p>Bhatnagar, S., Gill, L. and Ghosh, B. (2020). ‘Drone Image Segmentation Using Machine and Deep Learning for Mapping Raised Bog Vegetation Communities’. Remote Sensing, 12 (16), p.&nbsp;2602. doi: 10.3390/rs12162602.</p>
+<p>Geeksforgeeks(2023) <em>Support vector machine in Machine Learning</em>. Available at: https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/ (Assessed: 08 March 2024)</p>
+<p>GISGeography (2023) <em>Supervised and Unsupervised Classification in Remote Sensing</em>. Available at: https://gisgeography.com/supervised-unsupervised-classification-arcgis/ (Assessed: 08 March 2024)</p>
+<p>Jensen, J. R. (2015). <em>Introductory Digital Image Processing</em>. 4th edn. Pearson Higher Education US (A Remote Sensing Perspective).</p>
+<p>Lawrence, R.L., Wright, A., (2001). ‘Rule-based classification systems using classification and regression tree (CART) analysis’. <em>Photogrammetric Engineering &amp; Remote Sensing</em>, 67 (10), pp.1137–1142.</p>
+<p>MacLachlan, A. (2024) <em>Remotely Sensing Cities and Environments. Lecture 6: Classification.</em> Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-6/#1 (Assessed: 08 March 2024)</p>
+<p>Manuel Núñez, J., Medina, S., Ávila, G. and Montejano, J. (2019). ‘High-Resolution Satellite Imagery Classification for Urban Form Detection’. in B. Rustamov, R. (ed.) Satellite Information Classification and Interpretation. IntechOpen. doi: 10.5772/intechopen.82729.</p>
+<p>Mountrakis, G., Im, J. and Ogole, C. (2011). ‘Support vector machines in remote sensing: A review’. ISPRS Journal of Photogrammetry and Remote Sensing, 66 (3), pp.&nbsp;247–259. doi: 10.1016/j.isprsjprs.2010.11.001.</p>
+<p>RESEDA(no date) <em>Random Forest:Decision Tree Method</em>. Available at:https://blogs.fu-berlin.de/reseda/random-forest/ (Assessed: 08 March 2024)</p>
+<p>Sirat, E. F., Setiawan, B. D. and Ramdani, F. (2018). ‘Comparative Analysis of K-Means and Isodata Algorithms for Clustering of Fire Point Data in Sumatra Region’. in 2018 4th International Symposium on Geoinformatics (ISyG). 2018 4th International Symposium on Geoinformatics (ISyG), Malang: IEEE, pp.&nbsp;1–6. doi: 10.1109/ISYG.2018.8611879.</p>
+<p>Srivastava, A.(2021) <em>Support Vector Machines: SVM</em>. Available at: https://medium.com/analytics-vidhya/support-vector-machines-svm-87841ab63b8 (Assessed: 08 March 2024)</p>
+<p>Vapnik V. ( 2006) <em>Estimation of Dependences Based on Empirical Data. </em> USA: Springer Science &amp; Business Media</p>
+</div>
 
 
 </section>
