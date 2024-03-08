@@ -121,7 +121,7 @@ In addition to CART and RF, the following classifiers were introduced in the lec
 
 -   **Maximum Likelihood**:
 
-The maximum likelihood is a decision rule classifier. It assigns pixels in an image to different landover classes based on their spectral characteristics, using probabilities and decision rules. The goal is to maximise the likelihood of observed pixel values given class statistics (MacLachlan, 2024). The advantages of the classifier are simple and robust enough to accommodate large datasets and the modifications (Manuel Núñez et al., 2019). 
+The maximum likelihood is a decision rule classifier. It assigns pixels in an image to different landover classes based on their spectral characteristics, using probabilities and decision rules (MacLachlan, 2024). The goal is to maximise the likelihood of observed pixel values given class statistics. The advantages of the classifier are simple and robust enough to accommodate large datasets and the modifications (Manuel Núñez et al., 2019). 
 
 
 -   **Support Vector Machines(SVM)**:
@@ -149,15 +149,8 @@ Referring to [Geeksforgeeks(2023)]( https://www.geeksforgeeks.org/support-vector
     + Limited interpretability.
     + Choice of Kernel
     + ...
-    
-<br/>
+
 :::
-
-### 1.2.3 Comparison of CART and RF {.unnumbered}
-
-Based on the code provided in the practical, I also tried to use Landsat 8 data to classify land use in Shenzhen by CART (Figure ) and RF (Figure ). 
-
-
 
 # 2. Application {.unnumbered}
 
