@@ -8,7 +8,7 @@ title: "Week06"
 
 Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number.
 
-## 1.2 Why need to use GEE ? {.unnumbered}
+## 1.2 Why Need to Use GEE ? {.unnumbered}
 
 The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020), Corelick et al.(2017), and Ollie's lecture.
 
@@ -27,7 +27,7 @@ The application GEE is popular since it can provide more possibilities to users,
     -   Combined with a powerful web-based programming interface.
     -   RS data can be accessed through the JavaScript and Python API.
 
-## 1.3 How to use GEE ? {.unnumbered}
+## 1.3 How to Use GEE ? {.unnumbered}
 
 In terms of practical, I applied RS imagery of Delhi, India collected by Landsat 8 Satellite to discuss the application of the GEE platform.
 

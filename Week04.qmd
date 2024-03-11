@@ -6,7 +6,7 @@ The lecture of the week has introduced several applications of remote sensing an
 
 # 1.Content Summary: Policy Challenge {.unnumbered}
 
-## 1.1 Background: Thermal environment in Singapore {.unnumbered}
+## 1.1 Background: Thermal Environment in Singapore {.unnumbered}
 
 Affected by major global climate changes caused by greenhouse gas emissions, Singapore's annual average temperature rose from 26.9°C to 28.0°C from 1980 to 2020; Moreover, by 2100, the temperature will rise by 1.4°C to 4.6°C due to the long-term effects of climate change (The National Climate Change Secretariat (NCCS), no date).
 
