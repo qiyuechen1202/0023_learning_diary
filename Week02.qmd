@@ -17,4 +17,3 @@ xaringanExtra::embed_xaringan(
   url = "https://qiyuechen1202.github.io/0023_pratical_project/",
   ratio = "16:9")
 ```
-

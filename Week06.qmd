@@ -4,9 +4,13 @@ title: "Week06"
 
 # 1. Content Summary: Google Earth Engine (GEE) {.unnumbered}
 
-## 1.1 What is GEE {.unnumbered}
+## 1.1 What is GEE ? {.unnumbered}
 
-Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number. \## 1.2 Why need to use GEE ? The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020), Corelick et al.(2017), and Ollie's lecture.
+Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number.
+
+## 1.2 Why need to use GEE ? {.unnumbered}
+
+The application GEE is popular since it can provide more possibilities to users, and the following will introduce its advantages based on the study of Amani et al.(2020), Corelick et al.(2017), and Ollie's lecture.
 
 1.  **Cloud-based Infrastructure**
     -   A free cloud-based service.
@@ -61,8 +65,7 @@ In terms of dataset application, Tamiminia et al. (2020) demonstrated, in a syst
 
 This is my first experience using GEE. It is undeniable that its usability is very powerful. Compared with SNAP and R studio, it provides a variety of online data sources and saves a lot of time in image processing. Although I have no experience with Javascript, I can learn and apply code through the function library it provides. I guess this is why I need to learn to use GEE!
 
-
-Nevertheless, I also recognise that GEE has some limitations in its application. GEE is a web-based platform, which requires me to use it under a constant Internet connection. This might pose challenges for users in areas with poor or no internet access. Besides,  Amani et al (2020) summarised some limitations of GEE, including incomplete support for algorithms (e.g., unavailability of deep learning algorithms) and the need for improvement in efficiency and accuracy of image segmentation algorithms for classification. 
+Nevertheless, I also recognise that GEE has some limitations in its application. GEE is a web-based platform, which requires me to use it under a constant Internet connection. This might pose challenges for users in areas with poor or no internet access. Besides, Amani et al (2020) summarised some limitations of GEE, including incomplete support for algorithms (e.g., unavailability of deep learning algorithms) and the need for improvement in efficiency and accuracy of image segmentation algorithms for classification.
 
 Hence, in GEE for image processing, I should experiment with and delve into multiple algorithms. By gaining a comprehensive understanding of the differences among these algorithms, I can strategically choose the most fitting one for computation. This exploration might serve as a potential direction for my future learning and development.
 
