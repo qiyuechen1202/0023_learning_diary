@@ -14,62 +14,51 @@ However, it is worth noting that machine learning methods are diverse and demons
 
 ![Table 1 Comparison between supervised classification and unsupervised classification. Source from [GISGeography(2023)](https://gisgeography.com/supervised-unsupervised-classification-arcgis/)](source/week07/table1.png)
 
-
 ## 1.1 Unsupervised Classification {.unnumbered}
 
 ### 1.1.1 The Fundamental Steps {.unnumbered}
+
 The fundamental steps for unsupervised classification involve:
 
 1.  Create Cluster
 2.  Assign Cluster
 
 ### 1.1.2 The Classifiers {.unnumbered}
+
 The common clustering image algorithms are:
 
-1.   **K-mean**
+1.  **K-mean**
 
 The K-means algorithm is more familiar to us. It assumes that the number of clusters is known prior, and the number of clusters can not be changed as long as the iteration is completed (Sirat, Setiawan and Ramdani, 2018) .
 
+2.  **ISODATA(The Iterative Self-Organizing Data Analysis Technique)**
 
-2.   **ISODATA(The Iterative Self-Organizing Data Analysis Technique)**
-  
+ISODATA is an improved algorithm of K-means, which uses an iterative algorithm to automatically adjust the number of clusters (Arai and Bu.2007). The main work principles of ISODATA are summarised by (Jensen 2015,. pp.406-407) as follows: <br/>
 
-ISODATA is an improved algorithm of K-means, which uses an iterative algorithm to automatically adjust the number of clusters (Arai and Bu.2007). The main work principles of ISODATA are summarised by  (Jensen 2015,. pp.406-407) as follows:
-<br/>
-
--   **Merge Cluster**: Merging clusters occurs when the separation distance in the multispectral feature space falls below a user-specified threshold.
-<br/>
-<br/>
--   **Split Cluster**:  If the standard deviation of a cluster exceeds a predefined value, and the number of members (pixels) is twice the minimum threshold, the cluster is split into two separate clusters.
-<br/>
+-   **Merge Cluster**: Merging clusters occurs when the separation distance in the multispectral feature space falls below a user-specified threshold. <br/> <br/>
+-   **Split Cluster**: If the standard deviation of a cluster exceeds a predefined value, and the number of members (pixels) is twice the minimum threshold, the cluster is split into two separate clusters. <br/>
 
 ## 1.2 Supervised Classification {.unnumbered}
 
-### 1.2.1 The Fundamental Steps{.unnumbered}
-The fundamental steps for supervised classification are as follows: 
+### 1.2.1 The Fundamental Steps {.unnumbered}
 
-1. Class Definition:<br/>
-Assemble features which have a property that stores the known class label and properties storing numeric values for the predictors.<br/>
-2. Pre-processing:<br/>
-Instantiate a classifier. Set its parameters if necessary.<br/>
-3. Training:<br/>
-Train the classifier using the training data.<br/>
-4. Pixel Assignment:<br/>
-Classify an image or feature collection.<br/>
-5. Accuracy Assessment:<br/>
-Estimate classification error with independent validation data.
-<br/>
+The fundamental steps for supervised classification are as follows:
 
-### 1.2.2 The Classifiers{.unnumbered}
+1.  Class Definition:<br/> Assemble features which have a property that stores the known class label and properties storing numeric values for the predictors.<br/>
+2.  Pre-processing:<br/> Instantiate a classifier. Set its parameters if necessary.<br/>
+3.  Training:<br/> Train the classifier using the training data.<br/>
+4.  Pixel Assignment:<br/> Classify an image or feature collection.<br/>
+5.  Accuracy Assessment:<br/> Estimate classification error with independent validation data. <br/>
 
-The common unsupervised image algorithms are: 
+### 1.2.2 The Classifiers {.unnumbered}
 
-1. **Classification and Regression Tree (CART)** 
+The common unsupervised image algorithms are:
 
-CART is a tree-based framework and consists of classification trees and regression trees. It can be used to divide the dataset into subsets  as a tree structure, which can capture different classes (for classification)and predict the value (for regression). Its application can capture patterns and regularities in data sets to maximise the homogeneity or similarity within each group, making the results more accurate. Gini impurity (for classification) and SME(Squared Mean Error, for regression ) in CART serve as criteria for classifying the subset aiming to minimise impurity or error of resulting subsets. In Figure 1, [RESEDA(no date)](https://blogs.fu-berlin.de/reseda/random-forest/ ) provides an tree-structure example for CART applied for Land classification,which can help me to understand the processing. 
+1.  **Classification and Regression Tree (CART)**
 
-![Figure 1 The land classification process of CART. Source from [RESEDA(no date)](https://blogs.fu-berlin.de/reseda/random-forest/ )](source/week07/CART.png)
+CART is a tree-based framework and consists of classification trees and regression trees. It can be used to divide the dataset into subsets as a tree structure, which can capture different classes (for classification)and predict the value (for regression). Its application can capture patterns and regularities in data sets to maximise the homogeneity or similarity within each group, making the results more accurate. Gini impurity (for classification) and SME(Squared Mean Error, for regression ) in CART serve as criteria for classifying the subset aiming to minimise impurity or error of resulting subsets. In Figure 1, [RESEDA(no date)](https://blogs.fu-berlin.de/reseda/random-forest/) provides an tree-structure example for CART applied for Land classification,which can help me to understand the processing.
 
+![Figure 1 The land classification process of CART. Source from [RESEDA(no date)](https://blogs.fu-berlin.de/reseda/random-forest/)](source/week07/CART.png)
 
 ::: {.callout-tip collapse="true"}
 ## The Advantages and Disadvantages of CART
@@ -78,20 +67,18 @@ Referring to the similar content of CASA0006, the advantages and disadvantages o
 
 -   **Advantages**:
 
-    + Interpretability : relatively easy to understand (compared to many trees).
-    + Flexibility : no assumptions of data distribution and no transformations needed.
-<br/>
+    -   Interpretability : relatively easy to understand (compared to many trees).
+    -   Flexibility : no assumptions of data distribution and no transformations needed. <br/>
 
 -   **Disadvantages**:
 
-    + Lack of smoothness : slight changes in the predicators can have a big impact on the response.
-    + Tendency of overfitting : meaning that the tree fits well to the training data but is unable to generalise to new data. Thus, it is essential to cut the tree levels to improve the generalisation ability of CART (Lawrence and Wright, 2001)
-<br/>
+    -   Lack of smoothness : slight changes in the predicators can have a big impact on the response.
+    -   Tendency of overfitting : meaning that the tree fits well to the training data but is unable to generalise to new data. Thus, it is essential to cut the tree levels to improve the generalisation ability of CART (Lawrence and Wright, 2001) <br/>
 :::
 
-2. **Random Forest (RF)**
+2.  **Random Forest (RF)**
 
-RF is an ensemble classifier that consists of many CARTs. Based on the summary of Aziz et al. (2024), the RF workflow (Figure 2) for land classification includes: (1) Random Forests operate on a given dataset with N records(the number of samples) and K outputs (the number of classes);(2) The RF model creates decision trees for each set of samples to produce the output;(3) the final output is determined by assigning greater importance to the majority of votes. 
+RF is an ensemble classifier that consists of many CARTs. Based on the summary of Aziz et al. (2024), the RF workflow (Figure 2) for land classification includes: (1) Random Forests operate on a given dataset with N records(the number of samples) and K outputs (the number of classes);(2) The RF model creates decision trees for each set of samples to produce the output;(3) the final output is determined by assigning greater importance to the majority of votes.
 
 After the training phase, the RF model becomes adept at making predictions or inferences on new, unseen data. The final result provides distinct labels representing different land types, showcasing its ability to generalise and classify land use with flexibility and accuracy.
 
@@ -104,65 +91,81 @@ Referring to the similar content of CASA0006, the advantages and disadvantages o
 
 -   **Advantages**:
 
-    + No assumptions on data distribution.
-    + Able to model non-linear relationship and feature interactions.
-    + Good predictive performance (especially for tabular data).
-    + Good generalisation.
+    -   No assumptions on data distribution.
+    -   Able to model non-linear relationship and feature interactions.
+    -   Good predictive performance (especially for tabular data).
+    -   Good generalisation.
 
 -   **Disadvantages**:
 
-    + Low interpretability: not intuitive, although there are some interpretation methods.
-<br/>
+    -   Low interpretability: not intuitive, although there are some interpretation methods. <br/>
 :::
 
-3. **Other Classifiers**
+3.  **Other Classifiers**
 
 In addition to CART and RF, the following classifiers were introduced in the lecture. Although their definition and applications are a bit complicated for me, they are very interesting and offer more possibilities to image classification. I hope to deepen my understanding of them in future studies.
 
 -   **Maximum Likelihood**:
 
-The maximum likelihood is a decision rule classifier. It assigns pixels in an image to different landover classes based on their spectral characteristics, using probabilities and decision rules (MacLachlan, 2024). The goal is to maximise the likelihood of observed pixel values given class statistics. The advantages of the classifier are simple and robust enough to accommodate large datasets and the modifications (Manuel Núñez et al., 2019). 
-
+The maximum likelihood is a decision rule classifier. It assigns pixels in an image to different landover classes based on their spectral characteristics, using probabilities and decision rules (MacLachlan, 2024). The goal is to maximise the likelihood of observed pixel values given class statistics. The advantages of the classifier are simple and robust enough to accommodate large datasets and the modifications (Manuel Núñez et al., 2019).
 
 -   **Support Vector Machines(SVM)**:
 
-As shown in Figure 3, SVM is a linear binary classifier - like logistic regression(MacLachlan, 2024).The algorithm can be used for linearly and nonlinearly separable data, which primarily work for classification problems (Srivastava, 2021). Based on the collection of labelled data instances,  the SVM training algorithm endeavours to identify a hyperplane that divides the dataset into a distinct, pre-defined number of classes in accordance with the patterns observed in the training examples (Vapnik, 2006).
+As shown in Figure 3, SVM is a linear binary classifier - like logistic regression(MacLachlan, 2024).The algorithm can be used for linearly and nonlinearly separable data, which primarily work for classification problems (Srivastava, 2021). Based on the collection of labelled data instances, the SVM training algorithm endeavours to identify a hyperplane that divides the dataset into a distinct, pre-defined number of classes in accordance with the patterns observed in the training examples (Vapnik, 2006).
 
 ![Figure 3 Linear support vector machine classifier . Source from Mountrakis, Im and Ogole (2011 )](source/week07/SVM.png)
 
 ::: {.callout-tip collapse="true"}
 ## The Advantages and Disadvantages of SVM
 
-Referring to [Geeksforgeeks(2023)]( https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/), the main advantages and disadvantages of SVM are as follows: 
+Referring to [Geeksforgeeks(2023)](https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/), the main advantages and disadvantages of SVM are as follows:
 
 -   **Advantages**:
 
-    + Handling in High-Dimensional Spaces and small datasets.
-    + Modelling non-linear decision boundaries.
-    + Robust to Overfitting (Leading to better generalisation to unseen data).
-    + ...
+    -   Handling in High-Dimensional Spaces and small datasets.
+    -   Modelling non-linear decision boundaries.
+    -   Robust to Overfitting (Leading to better generalisation to unseen data).
+    -   ...
 
 -   **Disadvantages**:
 
-    + It is not suitable for very large data sets with many features as the algorithm is computationally intensive.
-    + Limited to Binary Classification.
-    + Limited interpretability.
-    + Choice of Kernel
-    + ...
-
+    -   It is not suitable for very large data sets with many features as the algorithm is computationally intensive.
+    -   Limited to Binary Classification.
+    -   Limited interpretability.
+    -   Choice of Kernel
+    -   ...
 :::
 
 # 2. Application {.unnumbered}
 
+There are various classifiers for remote sensing data. Understanding the applications of these methods in previous studies and their accurate performance can help me further understand these classifiers. Based on a review of previous literature, Tamiminia et al.(2020) indicated that the most popular classifier was RF (49%), and the following are CART(13%) and SVM (11%). Figure x illustrates the accuracy performance of different classifiers, showing that all classifiers show a mean accuracy greater than 85%. Besides, the Decision Tree (DT) shows the best accuracy performance as the highest mean value, followed by CART. However, it is notable that RF demonstrates a greater variance in the mean value. Tamiminia et al. (2020) explained that, in some instances, this may be due to the low amount of training data that leads to misclassification.
+
+
+![Figure 4 Overall accuracy of different classifiers. Source from Tamiminia et al.(2020)](source/week07/calssifier.jpg)
+
+In terms of the **Local Climate Zones (LCZs)** mentioned in the Week04 Application, previous studies employed multiple classifiers of supervised classification, such as maximum likelihood (Xu et al., 2022), convolutional neural network (CNN) (zhou et al., 2021), and RF (Chen et al., 2021, Danylo et al., 2016)). Taking the study of Chen et al.(2021) as an example, the following introduces the LCZ classification using RF. Chen et al.(2021) adopted the Sentiel-2 Level-2A product to classify the central part of Nanchang City, Jiangxi Province, China, into 13 LCZ classes. The training data with 46,542 pixels and test data with 14,569 pixels were independently selected and spatially dispersed. Then, spectral, textural, and polarimetric features are inputted in RF classification, and Figure 5 shows the classification  result. Although the differential accuracies are illustrated in different types of LCZ(Table 2), the overall accuracy result is 89.55%, performing the acceptable results. Overall, the application is a typical example of supervised classification steps, which provides deep insights for exploring supervised classification. The steps of supervised classification are complicated, requiring a large dataset and carefully designing and improving the workflow to improve the accuracy performance.
+
+::: {layout-ncol="2"}
+![Figrue 5 (a)The Ture Color Map and (b) the LCZs Classification Map. Source from Chen et al.(2021) ](source/week07/LCZ.png)
+
+![Table 2 Accuracy (%) of LCZs Classification.Source from Chen et al.(2021). <br/> PA:Producer’s accuracy. UA:User's accuracy.OA: Overall accuracy<br/> ](source/week07/accuracy.png)
+:::
+
+
 # 3. Reflection {.unnumbered}
 
 # 4. Reference {.unnumbered}
+
 ::: {style="overflow-y: scroll; height: 300px;"}
-Arai, K. and Bu, X. (2007). ‘ISODATA clustering with parameter (threshold for merge and split) estimation based on GA: Genetic Algorithm’, *Reports of the Faculty of Science and Engineering Saga University*,36.
+Arai, K. and Bu, X. (2007). 'ISODATA clustering with parameter (threshold for merge and split) estimation based on GA: Genetic Algorithm', *Reports of the Faculty of Science and Engineering Saga University*,36.
 
-Aziz, G., Minallah, N., Saeed, A., Frnda, J. and Khan, W. (2024). ‘Remote sensing based forest cover classification using machine learning’. Scientific Reports, 14 (1), p. 69. doi: 10.1038/s41598-023-50863-1.
+Aziz, G., Minallah, N., Saeed, A., Frnda, J. and Khan, W. (2024). 'Remote sensing based forest cover classification using machine learning'. Scientific Reports, 14 (1), p. 69. doi: 10.1038/s41598-023-50863-1.
 
-Bhatnagar, S., Gill, L. and Ghosh, B. (2020). ‘Drone Image Segmentation Using Machine and Deep Learning for Mapping Raised Bog Vegetation Communities’. Remote Sensing, 12 (16), p. 2602. doi: 10.3390/rs12162602.
+Bhatnagar, S., Gill, L. and Ghosh, B. (2020). 'Drone Image Segmentation Using Machine and Deep Learning for Mapping Raised Bog Vegetation Communities'. Remote Sensing, 12 (16), p. 2602. doi: 10.3390/rs12162602.
+
+Chen, C., Bagan, H., Xie, X., Tan, L. and Yamagata, Y. (2021). ‘Assessment of a Random Forest Classifier in Urban Local Climate Zone Classification Using Sentinel-2 and PALSAR-2’.* in 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS. IGARSS 2021 - 2021 IEEE International Geoscience and Remote Sensing Symposium,* Brussels, Belgium: IEEE, pp. 6797–6800. doi: 10.1109/IGARSS47720.2021.9553260.
+
+Danylo, O., See, L., Bechtel, B., Schepaschenko, D. and Fritz, S. (2016). ‘Contributing to WUDAPT: A Local Climate Zone Classification of Two Cities in Ukraine’. *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, 9 (5), pp. 1841–1853. doi: 10.1109/JSTARS.2016.2539977.
 
 Geeksforgeeks(2023) *Support vector machine in Machine Learning*. Available at: https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/ (Assessed: 08 March 2024)
 
@@ -170,20 +173,25 @@ GISGeography (2023) *Supervised and Unsupervised Classification in Remote Sensin
 
 Jensen, J. R. (2015). *Introductory Digital Image Processing*. 4th edn. Pearson Higher Education US (A Remote Sensing Perspective).
 
-Lawrence, R.L., Wright, A., (2001). ‘Rule-based classification systems using classification and regression tree (CART) analysis’. *Photogrammetric Engineering & Remote Sensing*, 67 (10), pp.1137–1142.
+Lawrence, R.L., Wright, A., (2001). 'Rule-based classification systems using classification and regression tree (CART) analysis'. *Photogrammetric Engineering & Remote Sensing*, 67 (10), pp.1137--1142.
 
-MacLachlan, A.  (2024)  *Remotely Sensing Cities and Environments. Lecture 6: Classification.* Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-6/#1 (Assessed: 08 March 2024)
+MacLachlan, A. (2024) *Remotely Sensing Cities and Environments. Lecture 6: Classification.* Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-6/#1 (Assessed: 08 March 2024)
 
-Manuel Núñez, J., Medina, S., Ávila, G. and Montejano, J. (2019). ‘High-Resolution Satellite Imagery Classification for Urban Form Detection’. in B. Rustamov, R. (ed.) Satellite Information Classification and Interpretation. IntechOpen. doi: 10.5772/intechopen.82729.
+Manuel Núñez, J., Medina, S., Ávila, G. and Montejano, J. (2019). 'High-Resolution Satellite Imagery Classification for Urban Form Detection'. in B. Rustamov, R. (ed.) Satellite Information Classification and Interpretation. IntechOpen. doi: 10.5772/intechopen.82729.
 
-Mountrakis, G., Im, J. and Ogole, C. (2011). ‘Support vector machines in remote sensing: A review’. ISPRS Journal of Photogrammetry and Remote Sensing, 66 (3), pp. 247–259. doi: 10.1016/j.isprsjprs.2010.11.001.
+Mountrakis, G., Im, J. and Ogole, C. (2011). 'Support vector machines in remote sensing: A review'. ISPRS Journal of Photogrammetry and Remote Sensing, 66 (3), pp. 247--259. doi: 10.1016/j.isprsjprs.2010.11.001.
 
 RESEDA(no date) *Random Forest:Decision Tree Method*. Available at:https://blogs.fu-berlin.de/reseda/random-forest/ (Assessed: 08 March 2024)
 
-Sirat, E. F., Setiawan, B. D. and Ramdani, F. (2018). ‘Comparative Analysis of K-Means and Isodata Algorithms for Clustering of Fire Point Data in Sumatra Region’. in 2018 4th International Symposium on Geoinformatics (ISyG). 2018 4th International Symposium on Geoinformatics (ISyG), Malang: IEEE, pp. 1–6. doi: 10.1109/ISYG.2018.8611879.
+Sirat, E. F., Setiawan, B. D. and Ramdani, F. (2018). 'Comparative Analysis of K-Means and Isodata Algorithms for Clustering of Fire Point Data in Sumatra Region'. in 2018 4th International Symposium on Geoinformatics (ISyG). 2018 4th International Symposium on Geoinformatics (ISyG), Malang: IEEE, pp. 1--6. doi: 10.1109/ISYG.2018.8611879.
 
-Srivastava, A.(2021)  *Support Vector Machines: SVM*. Available at: https://medium.com/analytics-vidhya/support-vector-machines-svm-87841ab63b8 (Assessed: 08 March 2024)
+Srivastava, A.(2021) *Support Vector Machines: SVM*. Available at: https://medium.com/analytics-vidhya/support-vector-machines-svm-87841ab63b8 (Assessed: 08 March 2024)
 
-Vapnik V. ( 2006) *Estimation of Dependences Based on Empirical Data. * USA: Springer Science & Business Media
+Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S. and Brisco, B. (2020). ‘Google Earth Engine for geo-big data applications: A meta-analysis and systematic review’. *ISPRS Journal of Photogrammetry and Remote Sensing*, 164, pp. 152–170. doi: 10.1016/j.isprsjprs.2020.04.001.
+
+Vapnik V. ( 2006) *Estimation of Dependences Based on Empirical Data.* USA: Springer Science & Business Media
+
+Xu, X., Qiu, W., Li, W., Huang, D., Li, X. and Yang, S. (2022). ‘Comparing satellite image and GIS data classified local climate zones to assess urban heat island: A case study of Guangzhou’. *Frontiers in Environmental Science*, 10, p. 1029445. doi: 10.3389/fenvs.2022.1029445.
+
+Zhou, Y., Wei, T., Zhu, X. and Collin, M. (2021). ‘A Parcel-Based Deep-Learning Classification to Map Local Climate Zones From Sentinel-2 Images’.* IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, 14, pp. 4194–4204. doi: 10.1109/JSTARS.2021.3071577.
 :::
-

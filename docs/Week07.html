@@ -391,6 +391,34 @@ The Advantages and Disadvantages of SVM
 </section>
 <section id="application" class="level1 unnumbered">
 <h1 class="unnumbered">2. Application</h1>
+<p>There are various classifiers for remote sensing data. Understanding the applications of these methods in previous studies and their accurate performance can help me further understand these classifiers. Based on a review of previous literature, Tamiminia et al.(2020) indicated that the most popular classifier was RF (49%), and the following are CART(13%) and SVM (11%). Figure x illustrates the accuracy performance of different classifiers, showing that all classifiers show a mean accuracy greater than 85%. Besides, the Decision Tree (DT) shows the best accuracy performance as the highest mean value, followed by CART. However, it is notable that RF demonstrates a greater variance in the mean value. Tamiminia et al.&nbsp;(2020) explained that, in some instances, this may be due to the low amount of training data that leads to misclassification.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week07/calssifier.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 4 Overall accuracy of different classifiers. Source from Tamiminia et al.(2020)</figcaption>
+</figure>
+</div>
+<p>In terms of the <strong>Local Climate Zones (LCZs)</strong> mentioned in the Week04 Application, previous studies employed multiple classifiers of supervised classification, such as maximum likelihood (Xu et al., 2022), convolutional neural network (CNN) (zhou et al., 2021), and RF (Chen et al., 2021, Danylo et al., 2016)). Taking the study of Chen et al.(2021) as an example, the following introduces the LCZ classification using RF. Chen et al.(2021) adopted the Sentiel-2 Level-2A product to classify the central part of Nanchang City, Jiangxi Province, China, into 13 LCZ classes. The training data with 46,542 pixels and test data with 14,569 pixels were independently selected and spatially dispersed. Then, spectral, textural, and polarimetric features are inputted in RF classification, and Figure 5 shows the classification result. Although the differential accuracies are illustrated in different types of LCZ(Table 2), the overall accuracy result is 89.55%, performing the acceptable results. Overall, the application is a typical example of supervised classification steps, which provides deep insights for exploring supervised classification. The steps of supervised classification are complicated, requiring a large dataset and carefully designing and improving the workflow to improve the accuracy performance.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week07/LCZ.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figrue 5 (a)The Ture Color Map and (b) the LCZs Classification Map. Source from Chen et al.(2021)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week07/accuracy.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Table 2 Accuracy (%) of LCZs Classification.Source from Chen et al.(2021). <br> PA:Producer’s accuracy. UA:User’s accuracy.OA: Overall accuracy<br></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="reflection" class="level1 unnumbered">
 <h1 class="unnumbered">3. Reflection</h1>
@@ -401,6 +429,8 @@ The Advantages and Disadvantages of SVM
 <p>Arai, K. and Bu, X. (2007). ‘ISODATA clustering with parameter (threshold for merge and split) estimation based on GA: Genetic Algorithm’, <em>Reports of the Faculty of Science and Engineering Saga University</em>,36.</p>
 <p>Aziz, G., Minallah, N., Saeed, A., Frnda, J. and Khan, W. (2024). ‘Remote sensing based forest cover classification using machine learning’. Scientific Reports, 14 (1), p.&nbsp;69. doi: 10.1038/s41598-023-50863-1.</p>
 <p>Bhatnagar, S., Gill, L. and Ghosh, B. (2020). ‘Drone Image Segmentation Using Machine and Deep Learning for Mapping Raised Bog Vegetation Communities’. Remote Sensing, 12 (16), p.&nbsp;2602. doi: 10.3390/rs12162602.</p>
+<p>Chen, C., Bagan, H., Xie, X., Tan, L. and Yamagata, Y. (2021). ‘Assessment of a Random Forest Classifier in Urban Local Climate Zone Classification Using Sentinel-2 and PALSAR-2’.* in 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS. IGARSS 2021 - 2021 IEEE International Geoscience and Remote Sensing Symposium,* Brussels, Belgium: IEEE, pp.&nbsp;6797–6800. doi: 10.1109/IGARSS47720.2021.9553260.</p>
+<p>Danylo, O., See, L., Bechtel, B., Schepaschenko, D. and Fritz, S. (2016). ‘Contributing to WUDAPT: A Local Climate Zone Classification of Two Cities in Ukraine’. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, 9 (5), pp.&nbsp;1841–1853. doi: 10.1109/JSTARS.2016.2539977.</p>
 <p>Geeksforgeeks(2023) <em>Support vector machine in Machine Learning</em>. Available at: https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/ (Assessed: 08 March 2024)</p>
 <p>GISGeography (2023) <em>Supervised and Unsupervised Classification in Remote Sensing</em>. Available at: https://gisgeography.com/supervised-unsupervised-classification-arcgis/ (Assessed: 08 March 2024)</p>
 <p>Jensen, J. R. (2015). <em>Introductory Digital Image Processing</em>. 4th edn. Pearson Higher Education US (A Remote Sensing Perspective).</p>
@@ -411,7 +441,10 @@ The Advantages and Disadvantages of SVM
 <p>RESEDA(no date) <em>Random Forest:Decision Tree Method</em>. Available at:https://blogs.fu-berlin.de/reseda/random-forest/ (Assessed: 08 March 2024)</p>
 <p>Sirat, E. F., Setiawan, B. D. and Ramdani, F. (2018). ‘Comparative Analysis of K-Means and Isodata Algorithms for Clustering of Fire Point Data in Sumatra Region’. in 2018 4th International Symposium on Geoinformatics (ISyG). 2018 4th International Symposium on Geoinformatics (ISyG), Malang: IEEE, pp.&nbsp;1–6. doi: 10.1109/ISYG.2018.8611879.</p>
 <p>Srivastava, A.(2021) <em>Support Vector Machines: SVM</em>. Available at: https://medium.com/analytics-vidhya/support-vector-machines-svm-87841ab63b8 (Assessed: 08 March 2024)</p>
-<p>Vapnik V. ( 2006) <em>Estimation of Dependences Based on Empirical Data. </em> USA: Springer Science &amp; Business Media</p>
+<p>Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S. and Brisco, B. (2020). ‘Google Earth Engine for geo-big data applications: A meta-analysis and systematic review’. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 164, pp.&nbsp;152–170. doi: 10.1016/j.isprsjprs.2020.04.001.</p>
+<p>Vapnik V. ( 2006) <em>Estimation of Dependences Based on Empirical Data.</em> USA: Springer Science &amp; Business Media</p>
+<p>Xu, X., Qiu, W., Li, W., Huang, D., Li, X. and Yang, S. (2022). ‘Comparing satellite image and GIS data classified local climate zones to assess urban heat island: A case study of Guangzhou’. <em>Frontiers in Environmental Science</em>, 10, p.&nbsp;1029445. doi: 10.3389/fenvs.2022.1029445.</p>
+<p>Zhou, Y., Wei, T., Zhu, X. and Collin, M. (2021). ‘A Parcel-Based Deep-Learning Classification to Map Local Climate Zones From Sentinel-2 Images’.* IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, 14, pp.&nbsp;4194–4204. doi: 10.1109/JSTARS.2021.3071577.</p>
 </div>
 
 

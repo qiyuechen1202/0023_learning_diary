@@ -14,7 +14,6 @@ Compared to pixel-based supervised and unsupervised classification, OBIA aims to
 
 However, it is worth noting that OBIA also has significant uncertainties in image processing. Hao, Cui and Wang (2021) indicate that the challenges have led to various issues, such as the selection of segmentation scale, training samples, and accuracy assessment, influencing the accuracy of image feature extraction. Therefore, we must carefully consider the segmentation methods we use when conducting OBIA.
 
-
 -   **Simple Linear Iterative Clustering (SLIC)**
 
 In the lecture, the SLIC Algorithm is introduced as the common method of OBIA. SLIC is an adaptation of the k-means clustering algorithm for superpixel generation (Csillik, 2016). As the only parameter of the algorithm, K (the desired number of approximately equally sized superpixels) needs to be set, and superpixels are created by grouping nearby pixels with colour and spatial attributes proximity, considering the objects based on the similarity or difference of the pixels (Achanta et al.,2012). Regarding the working principle, the method adopts an algorithm that initiates from an initial rough pixel clustering and iteratively enhances the clusters until certain criteria are satisfied, ultimately forming superpixels(Csillik, 2016).
@@ -45,7 +44,7 @@ The matrix is used to visualise the accuracy performance of classification, whic
 
 -   In the binary cases, accuracy performance is measured by:
 
-    -   Producer accuracy
+    -   Producer's accuracy
     -   User's accuracy
     -   Overall accuracy
 
@@ -94,33 +93,31 @@ The Kappa coefficient is widely advocated and employed as a metric for assessing
 # 3. Reflection {.unnumbered}
 
 # 4. Reference {.unnumbered}
+
 ::: {style="overflow-y: scroll; height: 300px;"}
+Barsi, Á., Kugler, Zs., László, I., Szabó, Gy. and Abdulmutalib, H. M. (2018). 'ACCURACY DIMENSIONS IN REMOTE SENSING'. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLII--3, pp. 61--67. doi: 10.5194/isprs-archives-XLII-3-61-2018.
 
-Barsi, Á., Kugler, Zs., László, I., Szabó, Gy. and Abdulmutalib, H. M. (2018). ‘ACCURACY DIMENSIONS IN REMOTE SENSING’. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLII–3, pp. 61–67. doi: 10.5194/isprs-archives-XLII-3-61-2018.
+Blaschke, T. (2010). 'Object based image analysis for remote sensing'. ISPRS Journal of Photogrammetry and Remote Sensing, 65 (1), pp. 2--16. doi: 10.1016/j.isprsjprs.2009.06.004.
 
+Csillik, O. (2016). 'Superpixels: the end of pixels in OBIA: A comparison of state-of-the-art superpixel methods for remote sensing data'. in GEOBIA 2016: Solutions and synergies. GEOBIA 2016: Solutions and synergies, University of Twente. doi: 10.3990/2.439.
 
-Blaschke, T. (2010). ‘Object based image analysis for remote sensing’. ISPRS Journal of Photogrammetry and Remote Sensing, 65 (1), pp. 2–16. doi: 10.1016/j.isprsjprs.2009.06.004.
-
-Csillik, O. (2016). ‘Superpixels: the end of pixels in OBIA: A comparison of state-of-the-art superpixel methods for remote sensing data’. in GEOBIA 2016: Solutions and synergies. GEOBIA 2016: Solutions and synergies, University of Twente. doi: 10.3990/2.439.
-
-Csillik, O. (2017). ‘Fast Segmentation and Classification of Very High Resolution Remote Sensing Data Using SLIC Superpixels’. Remote Sensing, 9 (3), p. 243. doi: 10.3390/rs9030243.
+Csillik, O. (2017). 'Fast Segmentation and Classification of Very High Resolution Remote Sensing Data Using SLIC Superpixels'. Remote Sensing, 9 (3), p. 243. doi: 10.3390/rs9030243.
 
 Earth System Science and Remote Sensing (2020 *Accuracy Assessment*. Available at: https://medium.com/@wenzhao.li1989/accuracy-assessment-d164e492274b (Assessed: 10 March 2024)
 
-Ez-zahouani, B., Teodoro, A., El Kharki, O., Jianhua, L., Kotaridis, I., Yuan, X. and Ma, L. (2023). ‘Remote sensing imagery segmentation in object-based analysis: A review of methods, optimization, and quality evaluation over the past 20 years’. Remote Sensing Applications: Society and Environment, 32, p. 101031. doi: 10.1016/j.rsase.2023.101031.
+Ez-zahouani, B., Teodoro, A., El Kharki, O., Jianhua, L., Kotaridis, I., Yuan, X. and Ma, L. (2023). 'Remote sensing imagery segmentation in object-based analysis: A review of methods, optimization, and quality evaluation over the past 20 years'. Remote Sensing Applications: Society and Environment, 32, p. 101031. doi: 10.1016/j.rsase.2023.101031.
 
-Foody, G. M. (2020). ‘Explaining the unsuitability of the kappa coefficient in the assessment and comparison of the accuracy of thematic maps obtained by image classification’. Remote Sensing of Environment, 239, p. 111630. doi: 10.1016/j.rse.2019.111630.
+Foody, G. M. (2020). 'Explaining the unsuitability of the kappa coefficient in the assessment and comparison of the accuracy of thematic maps obtained by image classification'. Remote Sensing of Environment, 239, p. 111630. doi: 10.1016/j.rse.2019.111630.
 
-GISGeography(2024) *Image Classification Techniques in Remote Sensing [Infographic]*. Available at: https://gisgeography.com/image-classification-techniques-remote-sensing/ (Assessed: 10 March 2024)
+GISGeography(2024) *Image Classification Techniques in Remote Sensing \[Infographic\]*. Available at: https://gisgeography.com/image-classification-techniques-remote-sensing/ (Assessed: 10 March 2024)
 
-Hao, S., Cui, Y. and Wang, J. (2021). ‘Segmentation Scale Effect Analysis in the Object-Oriented Method of High-Spatial-Resolution Image Classification’. Sensors, 21 (23), p. 7935. doi: 10.3390/s21237935.
+Hao, S., Cui, Y. and Wang, J. (2021). 'Segmentation Scale Effect Analysis in the Object-Oriented Method of High-Spatial-Resolution Image Classification'. Sensors, 21 (23), p. 7935. doi: 10.3390/s21237935.
 
-Hay, G. J. and Castilla, G. (2008). ‘Geographic object-based image analysis (GEOBIA): A new name for a new discipline’. in Blaschke, T., Lang, S., and Hay, Geoffrey J. (eds) *Object-based image analysis: Spatial concepts for knowledge-driven remote sensing applications*. Berlin, Heidelberg: Springer Berlin Heidelberg, pp. 75–89. doi: 10.1007/978-3-540-77058-9_4.
+Hay, G. J. and Castilla, G. (2008). 'Geographic object-based image analysis (GEOBIA): A new name for a new discipline'. in Blaschke, T., Lang, S., and Hay, Geoffrey J. (eds) *Object-based image analysis: Spatial concepts for knowledge-driven remote sensing applications*. Berlin, Heidelberg: Springer Berlin Heidelberg, pp. 75--89. doi: 10.1007/978-3-540-77058-9_4.
 
-MacLachlan, A.  (2024)  *Remotely Sensing Cities and Environments. Lecture 7: Classification The Big Questions (Lecture 6 continued) and Accuracy.* Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-7/?panelset1=data2#1  (Assessed: 10 March 2024)
+MacLachlan, A. (2024) *Remotely Sensing Cities and Environments. Lecture 7: Classification The Big Questions (Lecture 6 continued) and Accuracy.* Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-7/?panelset1=data2#1 (Assessed: 10 March 2024)
 
-Perez Machado, R. P. and Small, C. (2013). ‘Identifying multi-decadal changes of the Sao Paulo urban agglomeration with mixed remote sensing techniques: Spectral mixture analysis and night lights’. [object Object]. doi: 10.12760/01-2013-2-03.
+Perez Machado, R. P. and Small, C. (2013). 'Identifying multi-decadal changes of the Sao Paulo urban agglomeration with mixed remote sensing techniques: Spectral mixture analysis and night lights'. \[object Object\]. doi: 10.12760/01-2013-2-03.
 
-Wu, C. and Murray, A. T. (2003). ‘Estimating impervious surface distribution by spectral mixture analysis’. Remote Sensing of Environment, 84 (4), pp. 493–505. doi: 10.1016/S0034-4257(02)00136-0.
-
+Wu, C. and Murray, A. T. (2003). 'Estimating impervious surface distribution by spectral mixture analysis'. Remote Sensing of Environment, 84 (4), pp. 493--505. doi: 10.1016/S0034-4257(02)00136-0.
 :::
