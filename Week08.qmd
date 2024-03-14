@@ -83,41 +83,61 @@ The Kappa coefficient is widely advocated and employed as a metric for assessing
     -   train-test data split
     -   Conduct cross validation /Leave one out cross validation(an extreme version of cross validation)
 
-1.  When training and testing the classification models, do we need to consider spatial autocorrelation? Do the following help:
+2.  When training and testing the classification models, do we need to consider spatial autocorrelation? Do the following help:
 
     -   Object based image analysis
     -   Spatial cross validation
 
 # 2. Application {.unnumbered}
 
+## 2.1 The Application of OBIA {.unnumbered}
+
+Based on my interests in OBIA, the section will focus on OBIA and further explore its application and accuracy performance by literature reviews. Based on the literature review of OBIA studies provided by Blaschke (2010), it is evident that the OBIA studies have been applied in various fields, including vegetation monitoring and mapping, land use and land cover classification and urban feature extraction; and the workflows and segmentation algorithms have been discussed and continuously optimised.
+
+What interests me is that many scholars have compared the performance of OBIA with pixel-based classification. Gao and Mas (2008) compared the classification results between OBIA and the pixel-based method using different spatial resolution satellite images. The results indicated that OBIA presented higher accuracies than pixel-based and demonstrated an advantage for processing higher-resolution images. Compared to the pixel-based method, Labib and Harris (2017) also summarised the benefits: considering spatial autocorrelation, enhancing image classification, considering contextual information, and integrating ancillary data into the process. 
+
+Furthermore, the study of Labib and Harris (2018) further confirmed the advantage of integrating ancillary data. In the study of forest fragmentation,  the object-based classification included DEM( raster data) and road network (vector data) as auxiliary data to improve the procedures of segmentation and classification. The result indicated that OBIA involving road network shapefiles shows notable advantages over pixel-based methods.
+
+However, some scholars also mentioned the limitations of OBIA. After the segmentation phase, expert knowledge combined with quantitative analysis of spectral features is typically used to classify and merge the data (Labib and Harris， 2017; Zhou, Troy and Grove, 2008). Troy and Grove ( 2008) argued that the object-based method introduced complexities using a knowledge-based approach since expert inputs could easily affect the effectiveness of rules and classification results. Thus, Considering the advantages of pixel change methods in detecting errors and further improving rules, Troy and Grove ( 2008)  suggest combining object-based methods with pixel-based methods to provide a better interpretation of the real world. 
+
+
 # 3. Reflection {.unnumbered}
 
 # 4. Reference {.unnumbered}
 
 ::: {style="overflow-y: scroll; height: 300px;"}
-Barsi, Á., Kugler, Zs., László, I., Szabó, Gy. and Abdulmutalib, H. M. (2018). 'ACCURACY DIMENSIONS IN REMOTE SENSING'. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLII--3, pp. 61--67. doi: 10.5194/isprs-archives-XLII-3-61-2018.
+Barsi, Á., Kugler, Zs., László, I., Szabó, Gy. and Abdulmutalib, H. M. (2018). 'ACCURACY DIMENSIONS IN REMOTE SENSING'. The International Archives of the Photogrammetry, *Remote Sensing and Spatial Information Sciences*, XLII--3, pp. 61--67. doi: 10.5194/isprs-archives-XLII-3-61-2018.
 
-Blaschke, T. (2010). 'Object based image analysis for remote sensing'. ISPRS Journal of Photogrammetry and Remote Sensing, 65 (1), pp. 2--16. doi: 10.1016/j.isprsjprs.2009.06.004.
+Blaschke, T. (2010). 'Object based image analysis for remote sensing'. *ISPRS Journal of Photogrammetry and Remote Sensing*, 65 (1), pp. 2--16. doi: 10.1016/j.isprsjprs.2009.06.004.
 
-Csillik, O. (2016). 'Superpixels: the end of pixels in OBIA: A comparison of state-of-the-art superpixel methods for remote sensing data'. in GEOBIA 2016: Solutions and synergies. GEOBIA 2016: Solutions and synergies, University of Twente. doi: 10.3990/2.439.
+Csillik, O. (2016). 'Superpixels: the end of pixels in OBIA: A comparison of state-of-the-art superpixel methods for remote sensing data'.*in GEOBIA 2016: Solutions and synergies. GEOBIA 2016: Solutions and synergies, University of Twente*. doi: 10.3990/2.439.
 
-Csillik, O. (2017). 'Fast Segmentation and Classification of Very High Resolution Remote Sensing Data Using SLIC Superpixels'. Remote Sensing, 9 (3), p. 243. doi: 10.3390/rs9030243.
+Csillik, O. (2017). 'Fast Segmentation and Classification of Very High Resolution Remote Sensing Data Using SLIC Superpixels'. *Remote Sensing*, 9 (3), p. 243. doi: 10.3390/rs9030243.
 
 Earth System Science and Remote Sensing (2020 *Accuracy Assessment*. Available at: https://medium.com/@wenzhao.li1989/accuracy-assessment-d164e492274b (Assessed: 10 March 2024)
 
-Ez-zahouani, B., Teodoro, A., El Kharki, O., Jianhua, L., Kotaridis, I., Yuan, X. and Ma, L. (2023). 'Remote sensing imagery segmentation in object-based analysis: A review of methods, optimization, and quality evaluation over the past 20 years'. Remote Sensing Applications: Society and Environment, 32, p. 101031. doi: 10.1016/j.rsase.2023.101031.
+Ez-zahouani, B., Teodoro, A., El Kharki, O., Jianhua, L., Kotaridis, I., Yuan, X. and Ma, L. (2023). 'Remote sensing imagery segmentation in object-based analysis: A review of methods, optimization, and quality evaluation over the past 20 years'. *Remote Sensing Applications: Society and Environment*, 32, p. 101031. doi: 10.1016/j.rsase.2023.101031.
 
-Foody, G. M. (2020). 'Explaining the unsuitability of the kappa coefficient in the assessment and comparison of the accuracy of thematic maps obtained by image classification'. Remote Sensing of Environment, 239, p. 111630. doi: 10.1016/j.rse.2019.111630.
+Foody, G. M. (2020). 'Explaining the unsuitability of the kappa coefficient in the assessment and comparison of the accuracy of thematic maps obtained by image classification'. *Remote Sensing of Environment*, 239, p. 111630. doi: 10.1016/j.rse.2019.111630.
+
+Gao, Y. and Mas, J. (2008). ‘A comparison of the performance of pixel based and object based classifications over images with various spatial resolutions’.*Online Journal of Earth Science*, 2, pp. 27–35.
 
 GISGeography(2024) *Image Classification Techniques in Remote Sensing \[Infographic\]*. Available at: https://gisgeography.com/image-classification-techniques-remote-sensing/ (Assessed: 10 March 2024)
 
-Hao, S., Cui, Y. and Wang, J. (2021). 'Segmentation Scale Effect Analysis in the Object-Oriented Method of High-Spatial-Resolution Image Classification'. Sensors, 21 (23), p. 7935. doi: 10.3390/s21237935.
+Hao, S., Cui, Y. and Wang, J. (2021). 'Segmentation Scale Effect Analysis in the Object-Oriented Method of High-Spatial-Resolution Image Classification'. *Sensors*, 21 (23), p. 7935. doi: 10.3390/s21237935.
 
 Hay, G. J. and Castilla, G. (2008). 'Geographic object-based image analysis (GEOBIA): A new name for a new discipline'. in Blaschke, T., Lang, S., and Hay, Geoffrey J. (eds) *Object-based image analysis: Spatial concepts for knowledge-driven remote sensing applications*. Berlin, Heidelberg: Springer Berlin Heidelberg, pp. 75--89. doi: 10.1007/978-3-540-77058-9_4.
 
+Labib, S. M. and Harris, A. (2018). ‘The potentials of Sentinel-2 and LandSat-8 data in green infrastructure extraction, using object based image analysis (OBIA) method’. *European Journal of Remote Sensing*, 51 (1), pp. 231–240. doi: 10.1080/22797254.2017.1419441.
+
 MacLachlan, A. (2024) *Remotely Sensing Cities and Environments. Lecture 7: Classification The Big Questions (Lecture 6 continued) and Accuracy.* Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-7/?panelset1=data2#1 (Assessed: 10 March 2024)
+
+Newman, M. E., McLaren, K. P. and Wilson, B. S. (2011). ‘Comparing the effects of classification techniques on landscape-level assessments: pixel-based versus object-based classification’. *International Journal of Remote Sensing*, 32 (14), pp. 4055–4073. doi: 10.1080/01431161.2010.484432.
 
 Perez Machado, R. P. and Small, C. (2013). 'Identifying multi-decadal changes of the Sao Paulo urban agglomeration with mixed remote sensing techniques: Spectral mixture analysis and night lights'. \[object Object\]. doi: 10.12760/01-2013-2-03.
 
-Wu, C. and Murray, A. T. (2003). 'Estimating impervious surface distribution by spectral mixture analysis'. Remote Sensing of Environment, 84 (4), pp. 493--505. doi: 10.1016/S0034-4257(02)00136-0.
+Wu, C. and Murray, A. T. (2003). 'Estimating impervious surface distribution by spectral mixture analysis'.*Remote Sensing of Environment*, 84 (4), pp. 493--505. doi: 10.1016/S0034-4257(02)00136-0.
+
+Zhou, W., Troy, A. and Grove, M. (2008). ‘Object-based Land Cover Classification and Change Analysis in the Baltimore Metropolitan Area Using Multitemporal High Resolution Remote Sensing Data’. *Sensors*, 8 (3), pp. 1613–1636. doi: 10.3390/s8031613.
+
 :::
