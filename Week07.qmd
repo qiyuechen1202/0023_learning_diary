@@ -138,7 +138,7 @@ Referring to [Geeksforgeeks(2023)](https://www.geeksforgeeks.org/support-vector-
 
 # 2. Application {.unnumbered}
 
-There are various classifiers for remote sensing data. Understanding the applications of these methods in previous studies and their accurate performance can help me further understand these classifiers. Based on a review of previous literature, Tamiminia et al.(2020) indicated that the most popular classifier was RF (49%), and the following are CART(13%) and SVM (11%). Figure x illustrates the accuracy performance of different classifiers, showing that all classifiers show a mean accuracy greater than 85%. Besides, the Decision Tree (DT) shows the best accuracy performance as the highest mean value, followed by CART. However, it is notable that RF demonstrates a greater variance in the mean value. Tamiminia et al. (2020) explained that, in some instances, this may be due to the low amount of training data that leads to misclassification.
+There are various classifiers for remote sensing data. Understanding the applications of these methods in previous studies and their accurate performance can help me further understand these classifiers. Based on a review of previous literature, Tamiminia et al.(2020) indicated that the most popular classifier was RF (49%), and the following are CART(13%) and SVM (11%). Figure 4 illustrates the accuracy performance of different classifiers, showing that all classifiers show a mean accuracy greater than 85%. Besides, the Decision Tree (DT) shows the best accuracy performance as the highest mean value, followed by CART. However, it is notable that RF demonstrates a greater variance in the mean value. Tamiminia et al. (2020) explained that, in some instances, this may be due to the low amount of training data that leads to misclassification.
 
 
 ![Figure 4 Overall accuracy of different classifiers. Source from Tamiminia et al.(2020)](source/week07/calssifier.jpg)
@@ -153,6 +153,11 @@ In terms of the **Local Climate Zones (LCZs)** mentioned in the Week04 Applicati
 
 
 # 3. Reflection {.unnumbered}
+
+In my undergraduate studies in urban planning and design, I often encountered limitations due to a lack of data, making it difficult to conduct large-scale urban research. For example, during the urban design course project on Bali island, I encountered significant difficulties due to the unavailability of detailed urban land cover data. However, through this week’s study, I have learned various classifiers for remote sensing image classification, and realised that machine learning could help urban planners identify and generate large-scale data, thus providing more possibilities for large-scale analysis of cities or regions. Furthermore, applying these classifiers can also assist me in delving deeper into the methods mentioned in week 04 for mitigating the urban heat island effect, such as LCZs and “Cooling” Roofs, demonstrating their broad applicability in practice.
+
+However, I also recognise that the choice of classifiers and procedure dramatically affects the accuracy performance. When I input the training set into GEE, the limited number of training samples and inaccurate delineation of land cover polygons resulted in issues with the final classification results. Therefore, in future applications,  it is essential to improve the procedures and the quality of training samples, which can improve the accuracy and reliability of the classification results.
+
 
 # 4. Reference {.unnumbered}
 
