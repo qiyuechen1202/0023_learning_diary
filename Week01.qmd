@@ -8,23 +8,24 @@ The below mind map concludes the content of week 1. Several fundamental concepts
 
 ![Figure 1 The Content Summary of Week01 (Source from MacLachlan,2024; Tempfli, et al.,2009; EARTHDATA, no date; Guo,Su and Hu,2023; SpatialPost, 2023)](source/week01/week01_summary.png)
 
-## 1.1 Basic Raster Image Processing and Statistics {.unnumbered}
+## 1.1 Basic Raster Image Processing {.unnumbered}
 
 In this section, I employ the satellite image of Cape Town collected for Sentinel-2 L2A on 15 May 2022. [European Space Agency(ESA)](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2#:~:text=The%20Copernicus%20Sentinel%2D2%20mission,of%20our%20land%20and%20vegetation) has proposed the Copernicus Sentinel-2 mission to observe earth by recording the wide-swath, high-resolution, multi-spectral imagery. The Sentinel-2 captures 13 spectral bands with different spatial resolutions.
 
 To explore the features of spectral bands and their combinations, the data is resampled to 20m by considering the neighbouring pixels. Further, the bands are rearranged based on the band combinations provided by [GISGeography](https://gisgeography.com/sentinel-2-bands-combinations/) ,as shown in Figure 2.
 
-![Figure 2 Sentinel Band Combinations: Natural Colour (B4,B3,B2)](source/week01/resampled_432.png){width="80%"}
-
 Figure 2 combines the red, green, and blue channels, reflecting an image similar to what the eye sees. The colour infrared adopts the near-infrared (B8) band to capture chlorophyll, showing healthier vegetation with darker red.
 
-![Figure 3 Sentinel Band Combinations: Colour Infrared (B8,B4,B3)](source/week01/red.png)
+![Figure 2 Sentinel Band Combinations: Natural Colour (B4,B3,B2)](source/week01/resampled_432.png){width="80%"}
 
 As shown in Figure 3, the eastern peninsula displays a large area of darker red, showing a dense vegetation coverage. In addition, the urbanised areas embody white and grey.
 
-![Figure 4 Sentinel Band Combinations: Agriculture (B11,B8,B2)](source/week01/agriculture.png)
+![Figure 3 Sentinel Band Combinations: Colour Infrared (B8,B4,B3)](source/week01/red.png)
 
 Figure 4 embodies a combination for agriculture. Similar to Colour Infrared, B8 is employed to monitor vegetation health. Combined with shortwave Infrared band (B11) being sensitive to moisture, this combination is beneficial to monitoring vegetation. Thus, the figure displays healthier and more hydrated vegetation with more bright green. In addition to vegetation, B11 also provides information about surface features. It mainly reflects that the bare soil area in the northeast corner of Cape Town reflects a slight red element. Moreover, the urbanised area appears blue.
+
+![Figure 4 Sentinel Band Combinations: Agriculture (B11,B8,B2)](source/week01/agriculture.png)
+
 
 # 2.Application {.unnumbered}
 
@@ -56,7 +57,7 @@ Although the advantages of remote sensing prove that it can be widely used in ur
 
 Remote sensing provides multiple datasets, which creates possibilities for exploring urban studies. Exciting is the potential synergy between remote sensing data and socioeconomic indicators, presenting an avenue for exploring spatial heterogeneity. It may be included in my future research. However, the drawbacks also suggest that as a researcher of urban studies, I need to think carefully when using this data. This entails thoughtful decisions regarding selecting remote sensing data, processing methods, analytical approaches, and result interpretation.
 
-My previous studies focused on applying Geographic Information Systems (GIS) with vector data. Over the next few weeks, exploring the knowledge of remote sensing will allow me to integrate these two technologies, which can enhance my ability in data acquisition and spatial analysis. I look forward to learning about remote sensing in the coming weeks :).
+My previous studies focused on applying Geographic Information Systems (GIS) with vector data. Over the next few weeks, exploring the knowledge of remote sensing will allow me to integrate these two technologies, which can enhance my ability in data acquisition and spatial analysis. I look forward to learning about remote sensing in the coming weeks. :)
 
 # 4.Reference {.unnumbered}
 
