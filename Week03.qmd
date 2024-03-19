@@ -8,28 +8,20 @@ This week, I have learned the preprocessing steps of remote sensing images. When
 
 ## 1.1 Corrections {.unnumbered}
 
-The following mind map summarises the knowledge of four correction methods, including Geometric, Atmospheric correction, Topographic and Radiometric correction, and focuses on the reasons and methods for using correction methods. 
+The following mind map summarises the knowledge of four correction methods, including Geometric, Atmospheric correction, Topographic and Radiometric correction, and focuses on the reasons and methods for using correction methods.
 
-
-
-![Figure 1: The Mind Map of Corrections](source/week03/Figure 1.png)
+![Figure 1: The Mind Map of Corrections. Content Source from MacLachlan (2024) ](source/week03/Figure 1.png)
 
 ## 1.2 Data Joining and Enhancement {.unnumbered}
 
-### 1.2.1 Data Joining{.unnumbered}
-
+### 1.2.1 Data Joining {.unnumbered}
 
 Image data can be joined by overlapping the base and second image by 20% ~30%. According to Jensen (2015), the joining steps are:
 
-1.  **Sample Selection**: <br/>
-Select a representative sample within the overlapping area.
-2.  **Histogram Extraction**: <br/>
-Extract a histogram from the base image.
-3.  **Histogram Matching**: <br/>
-Apply a histogram matching algorithm to the image, which can give similar brightness values of the two images.
-4.  **Edge Feathering**: <br/>
-Conduct edge feathering to seamlessly blend the images.
-
+1.  **Sample Selection**: <br/> Select a representative sample within the overlapping area.
+2.  **Histogram Extraction**: <br/> Extract a histogram from the base image.
+3.  **Histogram Matching**: <br/> Apply a histogram matching algorithm to the image, which can give similar brightness values of the two images.
+4.  **Edge Feathering**: <br/> Conduct edge feathering to seamlessly blend the images.
 
 ::: {.callout-tip collapse="false"}
 ## !! NOTE!! Some Solutions
@@ -42,9 +34,7 @@ When we may have problems joining different images (typically in surface reflect
 -   Calculate other metrics from the image.
 :::
 
-
 ### 1.2.2 Image enhancement {.unnumbered}
-
 
 -   The Methods of **Contrast Enhancement**
 
@@ -57,12 +47,12 @@ When we may have problems joining different images (typically in surface reflect
     -   **Ratio** (e.g. Normalised Burn Ratio)
     -   **Filter** (e,g. Edge enhancement, to change in pixel values.)
     -   **Principal Component Analysis (PCA)**: Transform multi-spectral data into uncorrelated and smaller dataset.
-    -   Texture；Spatial variation of grey values. (e.g. gray level co-occurrence matrices (GLCMs))
+    -   **Texture**；Spatial variation of grey values. (e.g. gray level co-occurrence matrices (GLCMs))
     -   **Fusion**: Where data from multiple sensors/sources is fused together.
 
 # 2. Application {.unnumbered}
 
-The pre-processing step of remote sensing plays an important role in data quality, and the section will take the study of Deng et al.(2019) as an example to understand the application of pre-processing technologies mentioned in the lecture. 
+The pre-processing step of remote sensing plays an important role in data quality, and the section will take the study of Deng et al.(2019) as an example to understand the application of pre-processing technologies mentioned in the lecture.
 
 Deng et al.(2019) adopted a sequence of multi-sensor SPOT images and Sentiel-2A data to monitor the urban expansion and green space dynamics in Hangzhou City, China, from 1996 to 2016.
 
@@ -74,9 +64,9 @@ Firstly, the authors adopted a topographic correction based on the collinearity 
 
 To improve classification accuracy, the authors used PCA to distinguish different principal components from the merged multip-date data, which can enhance the ability to capture change information. As shown in Figure 2, the change objects were extracted and highlighted in PC 3 (g), showing the land use change from cropland to urban land. The PCA provided a reliable basis for subsequent results of land classification.
 
-![Figure 2: The example of PCA land use change enhancement. Source from Deng et al.(2019) ](source/week03/Figure 1.png)
+![Figure 2: The example of PCA land use change enhancement. Source from Deng et al.(2019)](source/week03/Figure 2.jpeg)
 
-> (a) RGB composition image of SPOT-3 (2003); (b) color aerial photograph (2000); (c) RGB composition image of SPOT-5 (2006); (d) field survey photo (2006); (e–l) from the first to eighth principal components (PC1–PC8).
+>  Figure 2: (a) RGB composition image of SPOT-3 (2003); (b) color aerial photograph (2000); (c) RGB composition image of SPOT-5 (2006); (d) field survey photo (2006); (e--l) from the first to eighth principal components (PC1--PC8).
 
 This application further supports Munyati's (2004) argument that PCA has advantages in detecting changes. However, Deng et al.(2006) also indicated the weaknesses of PCA:
 
@@ -84,13 +74,14 @@ This application further supports Munyati's (2004) argument that PCA has advanta
 
 2.  Aa a scene dependent technique, PCA results often suffer from large heterogeneity, requiring a strong support form expert knowledge.
 
-
 # 4. Reflection {.unnumbered}
-
-Deng, J., Huang, Y., Chen, B., Tong, C., Liu, P., Wang, H. and Hong, Y. (2019). ‘A Methodology to Monitor Urban Expansion and Green Space Change Using a Time Series of Multi-Sensor SPOT and Sentinel-2A Images’. Remote Sensing, 11 (10), p. 1230. doi: 10.3390/rs11101230.
+::: {style="overflow-y: scroll; height: 300px;"}
+Deng, J., Huang, Y., Chen, B., Tong, C., Liu, P., Wang, H. and Hong, Y. (2019). 'A Methodology to Monitor Urban Expansion and Green Space Change Using a Time Series of Multi-Sensor SPOT and Sentinel-2A Images'. *Remote Sensing*, 11 (10), p. 1230. doi: 10.3390/rs11101230.
 
 Jensen, J. R. (2015). Introductory Digital Image Processing. 4th edn. Pearson Higher Education US (A Remote Sensing Perspective).
 
-Munyati, C. (2004). ‘Use of Principal Component Analysis (PCA) of Remote Sensing Images in Wetland Change Detection on the Kafue Flats, Zambia’. Geocarto International, 19 (3), pp. 11–22. doi: 10.1080/10106040408542313.
+MacLachlan, A. (2024) *Remotely Sensing Cities and Environments. Lecture 3: Remote sensing data*.Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-3/#1 (Assessed: 08 March 2024)
 
+Munyati, C. (2004). 'Use of Principal Component Analysis (PCA) of Remote Sensing Images in Wetland Change Detection on the Kafue Flats, Zambia'. *Geocarto International*, 19 (3), pp. 11--22. doi: 10.1080/10106040408542313.
 
+:::

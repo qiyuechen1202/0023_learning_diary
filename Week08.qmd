@@ -20,7 +20,7 @@ In the lecture, the SLIC Algorithm is introduced as the common method of OBIA. S
 
 Regarding the advantages of using SLIC, Achanta et al. (2012) indicate that SLIC surpasses current methods in computation speed, reducing computational complexity, memory efficiency, and boundary adherence, which can enhance the efficacy and quality of segmentation algorithms. However, Csillik (2017) illustrates the disadvantages of using superpixels and emphasises the need to carefully choose the size of superpixels: smaller superpixels can improve the geometric accuracy of objects but increase the computational time; larger superpixels ignore important boundaries and increase the internal heterogeneity of objects (Figure 2).
 
-![Figure 2 Comparing visualisation of superpixels captured by SLIC and SLICO(a free SLIC version).Picture source from Csillik (2017).](source/week08/SLIC.jpg)
+![Figure 2 Comparing visualisation of superpixels captured by SLIC and SLICO(a free SLIC version). Picture source from Csillik (2017).](source/week08/SLIC.jpg)
 
 > Left: 5 × 5 pixels, middle: 10 × 10 pixels, and right: 15 × 15 pixels.
 
@@ -62,7 +62,7 @@ The details and equations can be found in [Earth System Science and Remote Sensi
 
 When using real EO data for machine learning, we often encounter some problems in accuracy assessment. For example, We can't have both a high producer accuracy (recall) and a high user accuracy (precision).
 
-![Figure4 The equation of F1 score. Picture from MacLachlan (2024).](source/week08/F1.png)
+![Figure 4 The equation of F1 score. Picture from MacLachlan (2024).](source/week08/F1.png)
 
 F1_Score is a balance between precision and recall, takes beta attribute which weights precision or recall (usually beta = 1) (Figure 4). The socre ranges from 0 to 1, with 1 representing the model's best output and 0 representing the model's worst output.
 
@@ -94,19 +94,17 @@ The Kappa coefficient is widely advocated and employed as a metric for assessing
 
 Based on my interests in OBIA, the section will focus on OBIA and further explore its application and accuracy performance by literature reviews. Based on the literature review of OBIA studies provided by Blaschke (2010), it is evident that the OBIA studies have been applied in various fields, including vegetation monitoring and mapping, land use and land cover classification and urban feature extraction; and the workflows and segmentation algorithms have been discussed and continuously optimised.
 
-What interests me is that many scholars have compared the performance of OBIA with pixel-based classification. Gao and Mas (2008) compared the classification results between OBIA and the pixel-based method using different spatial resolution satellite images. The results indicated that OBIA presented higher accuracies than pixel-based and demonstrated an advantage for processing higher-resolution images. Compared to the pixel-based method, Labib and Harris (2017) also summarised the benefits: considering spatial autocorrelation, enhancing image classification, considering contextual information, and integrating ancillary data into the process. 
+What interests me is that many scholars have compared the performance of OBIA with pixel-based classification. Gao and Mas (2008) compared the classification results between OBIA and the pixel-based method using different spatial resolution satellite images. The results indicated that OBIA presented higher accuracies than pixel-based and demonstrated an advantage for processing higher-resolution images. Compared to the pixel-based method, Labib and Harris (2017) also summarised the benefits: considering spatial autocorrelation, enhancing image classification, considering contextual information, and integrating ancillary data into the process.
 
-Furthermore, the study of Labib and Harris (2018) further confirmed the advantage of integrating ancillary data. In the study of forest fragmentation,  the object-based classification included DEM( raster data) and road network (vector data) as auxiliary data to improve the procedures of segmentation and classification. The result indicated that OBIA involving road network shapefiles shows notable advantages over pixel-based methods.
+Furthermore, the study of Labib and Harris (2018) further confirmed the advantage of integrating ancillary data. In the study of forest fragmentation, the object-based classification included DEM( raster data) and road network (vector data) as auxiliary data to improve the procedures of segmentation and classification. The result indicated that OBIA involving road network shapefiles shows notable advantages over pixel-based methods.
 
-However, some scholars also mentioned the limitations of OBIA. After the segmentation phase, expert knowledge combined with quantitative analysis of spectral features is typically used to classify and merge the data (Labib and Harris, 2017; Zhou, Troy and Grove, 2008). Troy and Grove (2008) argued that the object-based method introduced complexities using a knowledge-based approach since expert inputs could easily affect the effectiveness of rules and classification results. Thus, Considering the advantages of pixel change methods in detecting errors and further improving rules, Troy and Grove (2008)  suggest combining object-based methods with pixel-based methods to provide a better interpretation of the real world. 
-
+However, some scholars also mentioned the limitations of OBIA. After the segmentation phase, expert knowledge combined with quantitative analysis of spectral features is typically used to classify and merge the data (Labib and Harris, 2017; Zhou, Troy and Grove, 2008). Troy and Grove (2008) argued that the object-based method introduced complexities using a knowledge-based approach since expert inputs could easily affect the effectiveness of rules and classification results. Thus, Considering the advantages of pixel change methods in detecting errors and further improving rules, Troy and Grove (2008) suggest combining object-based methods with pixel-based methods to provide a better interpretation of the real world.
 
 # 3. Reflection {.unnumbered}
 
 This week, we further expanded the classifiers and discussed methods for assessing accuracy. The development of remote sensing classification algorithms is rapid, and object-based methods provide new approach for classification. In urban planning, OBIA can be used to obtain data such as building distribution and transportation network layout. The vector data can be further integrated with Geographic Information System (GIS) for spatial analysis and visualization, enhancing the understanding and utilisation of geographic information. Additionally, these vector data can be integrated with geographic datasets in GIS to further enrich GIS databases, supporting planners in management and decision-making.
 
 With the continuous advancement of classification technology, remote sensing data has demonstrated strong potential in geospatial data acquisition and analysis. In the future, it can be further innovated to obtain more accurate classification data while also enhancing data availability. However, when utilising real-world remote sensing data for classification, various issues may arise (such as spatial autocorrelation), which affects the accuracy. This highlights the importance of having sufficient remote sensing knowledge to assess and address these challenges. Therefore, the accurate acquisition of remote sensing data not only relies on the development of technical tools but also requires professionals to continuously accumulate experience and improve methods to overcome various challenges that may arise during the classification process.
-
 
 # 4. Reference {.unnumbered}
 
@@ -125,7 +123,7 @@ Ez-zahouani, B., Teodoro, A., El Kharki, O., Jianhua, L., Kotaridis, I., Yuan, X
 
 Foody, G. M. (2020). 'Explaining the unsuitability of the kappa coefficient in the assessment and comparison of the accuracy of thematic maps obtained by image classification'. *Remote Sensing of Environment*, 239, p. 111630. doi: 10.1016/j.rse.2019.111630.
 
-Gao, Y. and Mas, J. (2008). ‘A comparison of the performance of pixel based and object based classifications over images with various spatial resolutions’.*Online Journal of Earth Science*, 2, pp. 27–35.
+Gao, Y. and Mas, J. (2008). 'A comparison of the performance of pixel based and object based classifications over images with various spatial resolutions'.*Online Journal of Earth Science*, 2, pp. 27--35.
 
 GISGeography(2024) *Image Classification Techniques in Remote Sensing \[Infographic\]*. Available at: https://gisgeography.com/image-classification-techniques-remote-sensing/ (Assessed: 10 March 2024)
 
@@ -133,16 +131,15 @@ Hao, S., Cui, Y. and Wang, J. (2021). 'Segmentation Scale Effect Analysis in the
 
 Hay, G. J. and Castilla, G. (2008). 'Geographic object-based image analysis (GEOBIA): A new name for a new discipline'. in Blaschke, T., Lang, S., and Hay, Geoffrey J. (eds) *Object-based image analysis: Spatial concepts for knowledge-driven remote sensing applications*. Berlin, Heidelberg: Springer Berlin Heidelberg, pp. 75--89. doi: 10.1007/978-3-540-77058-9_4.
 
-Labib, S. M. and Harris, A. (2018). ‘The potentials of Sentinel-2 and LandSat-8 data in green infrastructure extraction, using object based image analysis (OBIA) method’. *European Journal of Remote Sensing*, 51 (1), pp. 231–240. doi: 10.1080/22797254.2017.1419441.
+Labib, S. M. and Harris, A. (2018). 'The potentials of Sentinel-2 and LandSat-8 data in green infrastructure extraction, using object based image analysis (OBIA) method'. *European Journal of Remote Sensing*, 51 (1), pp. 231--240. doi: 10.1080/22797254.2017.1419441.
 
 MacLachlan, A. (2024) *Remotely Sensing Cities and Environments. Lecture 7: Classification The Big Questions (Lecture 6 continued) and Accuracy.* Available at: https://andrewmaclachlan.github.io/CASA0023-lecture-7/?panelset1=data2#1 (Assessed: 10 March 2024)
 
-Newman, M. E., McLaren, K. P. and Wilson, B. S. (2011). ‘Comparing the effects of classification techniques on landscape-level assessments: pixel-based versus object-based classification’. *International Journal of Remote Sensing*, 32 (14), pp. 4055–4073. doi: 10.1080/01431161.2010.484432.
+Newman, M. E., McLaren, K. P. and Wilson, B. S. (2011). 'Comparing the effects of classification techniques on landscape-level assessments: pixel-based versus object-based classification'. *International Journal of Remote Sensing*, 32 (14), pp. 4055--4073. doi: 10.1080/01431161.2010.484432.
 
 Perez Machado, R. P. and Small, C. (2013). 'Identifying multi-decadal changes of the Sao Paulo urban agglomeration with mixed remote sensing techniques: Spectral mixture analysis and night lights'. \[object Object\]. doi: 10.12760/01-2013-2-03.
 
 Wu, C. and Murray, A. T. (2003). 'Estimating impervious surface distribution by spectral mixture analysis'.*Remote Sensing of Environment*, 84 (4), pp. 493--505. doi: 10.1016/S0034-4257(02)00136-0.
 
-Zhou, W., Troy, A. and Grove, M. (2008). ‘Object-based Land Cover Classification and Change Analysis in the Baltimore Metropolitan Area Using Multitemporal High Resolution Remote Sensing Data’. *Sensors*, 8 (3), pp. 1613–1636. doi: 10.3390/s8031613.
-
+Zhou, W., Troy, A. and Grove, M. (2008). 'Object-based Land Cover Classification and Change Analysis in the Baltimore Metropolitan Area Using Multitemporal High Resolution Remote Sensing Data'. *Sensors*, 8 (3), pp. 1613--1636. doi: 10.3390/s8031613.
 :::
