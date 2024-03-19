@@ -2,7 +2,7 @@
 title: "Week01"
 ---
 
-# 1.Content Summary {.unnumbered}
+# 1.Content Summary: Intro to Remote Sensing {.unnumbered}
 
 The below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.
 

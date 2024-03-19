@@ -163,7 +163,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4</span> Summary</a></li>
+  <li><a href="#content-summary-corrections" id="toc-content-summary-corrections" class="nav-link active" data-scroll-target="#content-summary-corrections">1. Content Summary: Corrections</a>
+  <ul class="collapse">
+  <li><a href="#corrections" id="toc-corrections" class="nav-link" data-scroll-target="#corrections">1.1 Corrections</a></li>
+  <li><a href="#data-joining-and-enhancement" id="toc-data-joining-and-enhancement" class="nav-link" data-scroll-target="#data-joining-and-enhancement">1.2 Data Joining and Enhancement</a>
+  <ul class="collapse">
+  <li><a href="#data-joining" id="toc-data-joining" class="nav-link" data-scroll-target="#data-joining">1.2.1 Data Joining</a></li>
+  <li><a href="#image-enhancement" id="toc-image-enhancement" class="nav-link" data-scroll-target="#image-enhancement">1.2.2 Image enhancement</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">2. Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">4. Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -187,8 +197,108 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Summary</h1>
+<section id="content-summary-corrections" class="level1 unnumbered">
+<h1 class="unnumbered">1. Content Summary: Corrections</h1>
+<p>This week, I have learned the preprocessing steps of remote sensing images. When transmitting and acquiring remote sensing images, we may encounter various interferences, such as sensor noise, atmospheric disturbance, terrain effects, etc, which affect the accuracy and usability of the images. Therefore, the pre-processing steps are essential to improve the image quality, providing a more reliable data basis for subsequent analysis. There are two preprocessing steps: (1) Corrections and (2) Data joining and enhancement.</p>
+<section id="corrections" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="corrections">1.1 Corrections</h2>
+<p>The following mind map summarises the knowledge of four correction methods, including Geometric, Atmospheric correction, Topographic and Radiometric correction, and focuses on the reasons and methods for using correction methods.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week03/Figure 1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 1: The Mind Map of Corrections</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-joining-and-enhancement" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="data-joining-and-enhancement">1.2 Data Joining and Enhancement</h2>
+<section id="data-joining" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="data-joining">1.2.1 Data Joining</h3>
+<p>Image data can be joined by overlapping the base and second image by 20% ~30%. According to Jensen (2015), the joining steps are:</p>
+<ol type="1">
+<li><strong>Sample Selection</strong>: <br> Select a representative sample within the overlapping area.</li>
+<li><strong>Histogram Extraction</strong>: <br> Extract a histogram from the base image.</li>
+<li><strong>Histogram Matching</strong>: <br> Apply a histogram matching algorithm to the image, which can give similar brightness values of the two images.</li>
+<li><strong>Edge Feathering</strong>: <br> Conduct edge feathering to seamlessly blend the images.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+!! NOTE!! Some Solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>When we may have problems joining different images (typically in surface reflectance products), some solutions are as follows:</p>
+<ul>
+<li>To Conduct Standardisation (dividing the SR value by a maximum value per band) and Normalisation (dividing the standardised value by the sum of values across all bands) for each image.</li>
+<li>Further apply relative radiometric normalisation.</li>
+<li>Classify each image alone.</li>
+<li>Calculate other metrics from the image.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="image-enhancement" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="image-enhancement">1.2.2 Image enhancement</h3>
+<ul>
+<li><p>The Methods of <strong>Contrast Enhancement</strong></p>
+<ul>
+<li>Minimum - Maximum</li>
+<li>Percentage Linear and Standard Deviation</li>
+<li>Piecewise Linear Contrast Stretch</li>
+</ul></li>
+<li><p><strong>Other Enhancement</strong></p>
+<ul>
+<li><strong>Ratio</strong> (e.g.&nbsp;Normalised Burn Ratio)</li>
+<li><strong>Filter</strong> (e,g. Edge enhancement, to change in pixel values.)</li>
+<li><strong>Principal Component Analysis (PCA)</strong>: Transform multi-spectral data into uncorrelated and smaller dataset.</li>
+<li>Texture；Spatial variation of grey values. (e.g.&nbsp;gray level co-occurrence matrices (GLCMs))</li>
+<li><strong>Fusion</strong>: Where data from multiple sensors/sources is fused together.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="application" class="level1 unnumbered">
+<h1 class="unnumbered">2. Application</h1>
+<p>The pre-processing step of remote sensing plays an important role in data quality, and the section will take the study of Deng et al.(2019) as an example to understand the application of pre-processing technologies mentioned in the lecture.</p>
+<p>Deng et al.(2019) adopted a sequence of multi-sensor SPOT images and Sentiel-2A data to monitor the urban expansion and green space dynamics in Hangzhou City, China, from 1996 to 2016.</p>
+<ul>
+<li><strong>Topographic Correction</strong></li>
+</ul>
+<p>Firstly, the authors adopted a topographic correction based on the collinearity equation to remove geometric distortion. The method took the digital orthorectified map (DOM) as the reference image and employed digital elevation model (DEM) and sensor position information to further support the step. The accuracy of correction results was further examined by RSME, and all were lower than 0.5.</p>
+<ul>
+<li><strong>Principal Component Analysis (PCA)</strong></li>
+</ul>
+<p>To improve classification accuracy, the authors used PCA to distinguish different principal components from the merged multip-date data, which can enhance the ability to capture change information. As shown in Figure 2, the change objects were extracted and highlighted in PC 3 (g), showing the land use change from cropland to urban land. The PCA provided a reliable basis for subsequent results of land classification.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="source/week03/Figure 1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 2: The example of PCA land use change enhancement. Source from Deng et al.(2019)</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<ol type="a">
+<li>RGB composition image of SPOT-3 (2003); (b) color aerial photograph (2000); (c) RGB composition image of SPOT-5 (2006); (d) field survey photo (2006); (e–l) from the first to eighth principal components (PC1–PC8).</li>
+</ol>
+</blockquote>
+<p>This application further supports Munyati’s (2004) argument that PCA has advantages in detecting changes. However, Deng et al.(2006) also indicated the weaknesses of PCA:</p>
+<ol type="1">
+<li><p>The results of PCA were affected by the difference between the multi-sensor and multi-date data.</p></li>
+<li><p>Aa a scene dependent technique, PCA results often suffer from large heterogeneity, requiring a strong support form expert knowledge.</p></li>
+</ol>
+</section>
+<section id="reflection" class="level1 unnumbered">
+<h1 class="unnumbered">4. Reflection</h1>
+<p>Deng, J., Huang, Y., Chen, B., Tong, C., Liu, P., Wang, H. and Hong, Y. (2019). ‘A Methodology to Monitor Urban Expansion and Green Space Change Using a Time Series of Multi-Sensor SPOT and Sentinel-2A Images’. Remote Sensing, 11 (10), p.&nbsp;1230. doi: 10.3390/rs11101230.</p>
+<p>Jensen, J. R. (2015). Introductory Digital Image Processing. 4th edn. Pearson Higher Education US (A Remote Sensing Perspective).</p>
+<p>Munyati, C. (2004). ‘Use of Principal Component Analysis (PCA) of Remote Sensing Images in Wetland Change Detection on the Kafue Flats, Zambia’. Geocarto International, 19 (3), pp.&nbsp;11–22. doi: 10.1080/10106040408542313.</p>
 
 
 </section>
