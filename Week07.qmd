@@ -29,11 +29,11 @@ The common clustering image algorithms are:
 
 1.  **K-mean**
 
-The K-means algorithm is more familiar to us. It assumes that the number of clusters is known prior, and the number of clusters can not be changed as long as the iteration is completed (Sirat, Setiawan and Ramdani, 2018) .
+The K-means algorithm is more familiar to us. It assumes that the number of clusters is known prior, and the number of clusters can not be changed as long as the iteration is completed (Sirat, Setiawan and Ramdani, 2018).
 
 2.  **ISODATA(The Iterative Self-Organizing Data Analysis Technique)**
 
-ISODATA is an improved algorithm of K-means, which uses an iterative algorithm to automatically adjust the number of clusters (Arai and Bu.2007). The main work principles of ISODATA are summarised by (Jensen 2015,. pp.406-407) as follows: <br/>
+ISODATA is an improved algorithm of K-means, which uses an iterative algorithm to automatically adjust the number of clusters (Arai and Bu, 2007). The main work principles of ISODATA are summarised by (Jensen 2015, pp.406-407) as follows: <br/>
 
 -   **Merge Cluster**: Merging clusters occurs when the separation distance in the multispectral feature space falls below a user-specified threshold. <br/> <br/>
 -   **Split Cluster**: If the standard deviation of a cluster exceeds a predefined value, and the number of members (pixels) is twice the minimum threshold, the cluster is split into two separate clusters. <br/>
@@ -56,7 +56,7 @@ The common unsupervised image algorithms are:
 
 1.  **Classification and Regression Tree (CART)**
 
-CART is a tree-based framework and consists of classification trees and regression trees. It can be used to divide the dataset into subsets as a tree structure, which can capture different classes (for classification)and predict the value (for regression). Its application can capture patterns and regularities in data sets to maximise the homogeneity or similarity within each group, making the results more accurate. Gini impurity (for classification) and SME(Squared Mean Error, for regression ) in CART serve as criteria for classifying the subset aiming to minimise impurity or error of resulting subsets. In Figure 1, [RESEDA(no date)](https://blogs.fu-berlin.de/reseda/random-forest/) provides an tree-structure example for CART applied for Land classification,which can help me to understand the processing.
+CART is a tree-based framework and consists of classification trees and regression trees. It can be used to divide the dataset into subsets as a tree structure, which can capture different classes (for classification)and predict the value (for regression). Its application can capture patterns and regularities in data sets to maximise the homogeneity or similarity within each group, making the results more accurate. Gini impurity (for classification) and SME(Squared Mean Error, for regression ) in CART serve as criteria for classifying the subset aiming to minimise impurity or error of resulting subsets. In Figure 1, [RESEDA(no date)](https://blogs.fu-berlin.de/reseda/random-forest/) provides a tree-structure example for CART applied for Land classification, which can help me to understand the processing.
 
 ![Figure 1 The land classification process of CART. Source from [RESEDA(no date)](https://blogs.fu-berlin.de/reseda/random-forest/)](source/week07/CART.png)
 
@@ -103,15 +103,15 @@ Referring to the similar content of CASA0006, the advantages and disadvantages o
 
 3.  **Other Classifiers**
 
-In addition to CART and RF, the following classifiers were introduced in the lecture. Although their definition and applications are a bit complicated for me, they are very interesting and offer more possibilities to image classification. I hope to deepen my understanding of them in future studies.
+In addition to CART and RF, the following classifiers were introduced in the lecture. Although their definition and applications are a bit complicated for me, they are very interesting and offer more possibilities for image classification. I hope to deepen my understanding of them in future studies.
 
 -   **Maximum Likelihood**:
 
-The maximum likelihood is a decision rule classifier. It assigns pixels in an image to different landover classes based on their spectral characteristics, using probabilities and decision rules (MacLachlan, 2024). The goal is to maximise the likelihood of observed pixel values given class statistics. The advantages of the classifier are simple and robust enough to accommodate large datasets and the modifications (Manuel Núñez et al., 2019).
+The maximum likelihood is a decision rule classifier. It assigns pixels in an image to different landcover classes based on their spectral characteristics, using probabilities and decision rules (MacLachlan, 2024). The goal is to maximise the likelihood of observed pixel values given class statistics. The advantages of the classifier are simple and robust enough to accommodate large datasets and modifications (Manuel Núñez et al., 2019).
 
 -   **Support Vector Machines(SVM)**:
 
-As shown in Figure 3, SVM is a linear binary classifier - like logistic regression(MacLachlan, 2024).The algorithm can be used for linearly and nonlinearly separable data, which primarily work for classification problems (Srivastava, 2021). Based on the collection of labelled data instances, the SVM training algorithm endeavours to identify a hyperplane that divides the dataset into a distinct, pre-defined number of classes in accordance with the patterns observed in the training examples (Vapnik, 2006).
+As shown in Figure 3, SVM is a linear binary classifier - like logistic regression(MacLachlan, 2024). The algorithm can be used for linearly and nonlinearly separable data, which primarily work for classification problems (Srivastava, 2021). Based on the collection of labelled data instances, the SVM training algorithm endeavours to identify a hyperplane that divides the dataset into a distinct, pre-defined number of classes in accordance with the patterns observed in the training examples (Vapnik, 2006).
 
 ![Figure 3 Linear support vector machine classifier . Source from Mountrakis, Im and Ogole (2011 )](source/week07/SVM.png)
 
@@ -139,6 +139,7 @@ Referring to [Geeksforgeeks(2023)](https://www.geeksforgeeks.org/support-vector-
 # 2. Application {.unnumbered}
 
 There are various classifiers for remote sensing data. Understanding the applications of these methods in previous studies and their accurate performance can help me further understand these classifiers. Based on a review of previous literature, Tamiminia et al.(2020) indicated that the most popular classifier was RF (49%), and the following are CART(13%) and SVM (11%). Figure 4 illustrates the accuracy performance of different classifiers, showing that all classifiers show a mean accuracy greater than 85%. Besides, the Decision Tree (DT) shows the best accuracy performance as the highest mean value, followed by CART. However, it is notable that RF demonstrates a greater variance in the mean value. Tamiminia et al. (2020) explained that, in some instances, this may be due to the low amount of training data that leads to misclassification.
+
 
 ![Figure 4 Overall accuracy of different classifiers. Source from Tamiminia et al.(2020)](source/week07/calssifier.jpg)
 

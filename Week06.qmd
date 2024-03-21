@@ -33,13 +33,13 @@ In terms of practical, I applied RS imagery of Delhi, India collected by Landsat
 
 1.  **Preprocessing**
 
-I filtered Landsat 8 dataset based on dates, cloud cover, and vector boundary data. Secondly, the true colour image was visualised by parameters( B4, B3, B2). Following this, the mean of all overlapping pixels was calculated to merge the three images and reduce the impact of extreme values in the image on the statistical results (Dimensionality Reduction). Finally, the image data was clipped using the vector boundary data, as illustrated in Figure 1.
+I filtered the Landsat 8 dataset based on dates, cloud cover, and vector boundary data. Secondly, the true colour image was visualised by parameters( B4, B3, B2). Following this, the mean of all overlapping pixels was calculated to merge the three images and reduce the impact of extreme values in the image on the statistical results (Dimensionality Reduction). Finally, the image data was clipped using the vector boundary data, as illustrated in Figure 1.
 
 ![Figure 1 The Preprocessing of Delhi](source/week06/processing_1.gif)
 
 2.  **Analysing**
 
-After Preprocessing, the image data is conducted analysis. Figure 2 presents the result of the grey-level co-occurrence matrix (GLCM) texture displayed by surface reflectance (SR). It seems that the airport area in the southeastern region shows a high SR. In addition, Normalised Difference Vegetation Index (NDVI) is calculated and visualised using GEE platform (Figure 3).
+After Preprocessing, the image data is analysed. Figure 2 presents the result of the grey-level co-occurrence matrix (GLCM) texture displayed by surface reflectance (SR). It seems that the airport area in the southeastern region shows a high SR. In addition,the Normalised Difference Vegetation Index (NDVI) is calculated and visualised using the GEE platform (Figure 3).
 
 ::: {layout-ncol="2"}
 ![Figure 2 glcm of Delhi](source/week06/glcm.png)
@@ -47,7 +47,7 @@ After Preprocessing, the image data is conducted analysis. Figure 2 presents the
 ![Figure 3 NDVI of Delhi](source/week06/NDVI.png)
 :::
 
-Furthermore,GEE also can conduct Principal Component Analysis (PCA), and Figure 4 demonstrates the first component of PCA. Despite the code of the PCA function is complex, it is undeniable that in comparison to SANP, GEE processes images very quickly and does not require local memory.
+Furthermore, GEE also can conduct Principal Component Analysis (PCA), and Figure 4 demonstrates the first component of PCA. Despite the code of the PCA function being complex, it is undeniable that in comparison to SANP, GEE processes images very quickly and does not require local memory.
 
 ![Figure 4 PCA1 of Delhi](source/week06/PCA1.png)
 
@@ -57,7 +57,7 @@ GEE provides an opportunity for large-scale geospatial analysis, and has found e
 
 ![Figure 5 GEE Application](source/week06/GEEapplication.jpg)
 
-In terms of dataset application, Tamiminia et al. (2020) demonstrated, in a systematic review of 348 GEE articles, that 90% of GEE research adopted remote sensing datasets and conducted a series of Machine Learning, including classification, regression, and other methods (e.g. feature extraction) (Figure 6). The findings also revealed that Landsat (especially Landsat 8) and MODIS, as optical imagery with medium spatial resolution, were most popular in GEE studies. Taking the study of Xie et al. (2019) as an example, the time-series Landsat dataset was adopted on the GEE platform to monitor vegetation dynamics by calculating indices, and the GEE application significantly reduced the time and effort spent on data access, processing, and its storage cost. Xie et al.(2019) further mentioned that GEE can contribute to the efficient collaboration and sharing of scripts, allowing scholars to apply codes and access results easily and freely. Additionally, Tamiminia et al. (2020) also revealed that 10% of GEE studies analysed ready-to-use products, mainly focusing on vegetation indices, land cover, Hansen global forest change, and Digital Elevation Models (DEMs). For instance, to capture cropland mapping of Africa, Xiong et al. (2017) applied the 16-day time-series of Moderate Resolution Imaging Spectroradiometer (MODIS) NDVI composited data at 250-m resolution to develop the algorithm on GEE platform.
+In terms of dataset application, Tamiminia et al. (2020) demonstrated, in a systematic review of 348 GEE articles, that 90% of GEE research adopted remote sensing datasets and conducted a series of Machine Learning, including classification, regression, and other methods (e.g. feature extraction) (Figure 6). The findings also revealed that Landsat (especially Landsat 8) and MODIS, as optical imagery with medium spatial resolution, were most popular in GEE studies. Taking the study of Xie et al. (2019) as an example, the time-series Landsat dataset was adopted on the GEE platform to monitor vegetation dynamics by calculating indices, and the GEE application significantly reduced the time and effort spent on data access, processing, and its storage cost. Xie et al.(2019) further mentioned that GEE can contribute to the efficient collaboration and sharing of scripts, allowing scholars to apply codes and access results easily and freely. Additionally, Tamiminia et al. (2020) also revealed that 10% of GEE studies analysed ready-to-use products, mainly focusing on vegetation indices, land cover, Hansen global forest change, and Digital Elevation Models (DEMs). For instance, to capture cropland mapping of Africa, Xiong et al. (2017) applied the 16-day time series of Moderate Resolution Imaging Spectroradiometer (MODIS) NDVI composited data at 250-m resolution to develop the algorithm on the GEE platform.
 
 ![Figure 6 GEE Application](source/week06/GEEapplication_2.jpg)
 

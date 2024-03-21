@@ -26,7 +26,7 @@ Regarding the advantages of using SLIC, Achanta et al. (2012) indicate that SLIC
 
 ## 1.2 Sub Pixel Analysis {.unnumbered}
 
-Also known as Sub-pixel Classification, Spectral Mixture Analysis (SMA), Linear Spectral Unmixing.
+Also known as Sub-pixel Classification, Spectral Mixture Analysis (SMA), and Linear Spectral Unmixing.
 
 Spectral Mixture Analysis (SMA) is proposed to accurately identify and quantify mixed land cover in real-world EO data. SMA is employed to compute the proportions or abundance of different land cover types within a pixel, and this method involves representing a mixed spectrum within the pixel as a mixture of spectra corresponding to pure land cover types(endmembers)(Wu and Murray, 2003). Perez Machado and Small (2013) indicate that SMA improves image interpretability, as it considers the physical processes leading to the observed radiances (below pixel scale) and allows for the presence of mixed pixels. There are two methods of SMA, which are linear and nonlinear. In research, the linear ones are usually employed (Wu and Murray, 2003; Perez Machado and Small,2013), as illustrated in Figure 3.
 
@@ -64,7 +64,7 @@ When using real EO data for machine learning, we often encounter some problems i
 
 ![Figure 4 The equation of F1 score. Picture from MacLachlan (2024).](source/week08/F1.png)
 
-F1_Score is a balance between precision and recall, takes beta attribute which weights precision or recall (usually beta = 1) (Figure 4). The socre ranges from 0 to 1, with 1 representing the model's best output and 0 representing the model's worst output.
+F1_Score is a balance between precision and recall and takes a beta attribute that weights precision or recall (usually beta = 1) (Figure 4). The score ranges from 0 to 1, with 1 representing the model's best output and 0 representing the model's worst output.
 
 ### 1.3.2 Kappa Coefficient {.unnumbered}
 
@@ -92,7 +92,7 @@ The Kappa coefficient is widely advocated and employed as a metric for assessing
 
 ## 2.1 The Application of OBIA {.unnumbered}
 
-Based on my interests in OBIA, the section will focus on OBIA and further explore its application and accuracy performance by literature reviews. Based on the literature review of OBIA studies provided by Blaschke (2010), it is evident that the OBIA studies have been applied in various fields, including vegetation monitoring and mapping, land use and land cover classification and urban feature extraction; and the workflows and segmentation algorithms have been discussed and continuously optimised.
+Based on my interests in OBIA, the section will focus on OBIA and further explore its application and accuracy performance through literature reviews. Based on the literature review of OBIA studies provided by Blaschke (2010), it is evident that the OBIA studies have been applied in various fields, including vegetation monitoring and mapping, land use and land cover classification and urban feature extraction; and the workflows and segmentation algorithms have been discussed and continuously optimised.
 
 What interests me is that many scholars have compared the performance of OBIA with pixel-based classification. Gao and Mas (2008) compared the classification results between OBIA and the pixel-based method using different spatial resolution satellite images. The results indicated that OBIA presented higher accuracies than pixel-based and demonstrated an advantage for processing higher-resolution images. Compared to the pixel-based method, Labib and Harris (2017) also summarised the benefits: considering spatial autocorrelation, enhancing image classification, considering contextual information, and integrating ancillary data into the process.
 
@@ -102,7 +102,7 @@ However, some scholars also mentioned the limitations of OBIA. After the segment
 
 # 3. Reflection {.unnumbered}
 
-This week, we further expanded the classifiers and discussed methods for assessing accuracy. The development of remote sensing classification algorithms is rapid, and object-based methods provide new approach for classification. In urban planning, OBIA can be used to obtain data such as building distribution and transportation network layout. The vector data can be further integrated with Geographic Information System (GIS) for spatial analysis and visualization, enhancing the understanding and utilisation of geographic information. Additionally, these vector data can be integrated with geographic datasets in GIS to further enrich GIS databases, supporting planners in management and decision-making.
+This week, we further expanded the classifiers and discussed methods for assessing accuracy. The development of remote sensing classification algorithms is rapid, and object-based methods provide a new approach to classification. In urban planning, OBIA can be used to obtain data such as building distribution and transportation network layout. The vector data can be further integrated with Geographic Information System (GIS) for spatial analysis and visualization, enhancing the understanding and utilisation of geographic information. Additionally, these vector data can be integrated with geographic datasets in GIS to further enrich GIS databases, supporting planners in management and decision-making.
 
 With the continuous advancement of classification technology, remote sensing data has demonstrated strong potential in geospatial data acquisition and analysis. In the future, it can be further innovated to obtain more accurate classification data while also enhancing data availability. However, when utilising real-world remote sensing data for classification, various issues may arise (such as spatial autocorrelation), which affects the accuracy. This highlights the importance of having sufficient remote sensing knowledge to assess and address these challenges. Therefore, the accurate acquisition of remote sensing data not only relies on the development of technical tools but also requires professionals to continuously accumulate experience and improve methods to overcome various challenges that may arise during the classification process.
 

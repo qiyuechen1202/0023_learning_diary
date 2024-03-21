@@ -76,7 +76,7 @@ This application further supports Munyati's (2004) argument that PCA has advanta
 
 # 3. Reflection {.unnumbered}
 
-The content this week is challenging for me as a beginner in remote sensing. However, these preprocessing techniques are crucial for improving the usability and accuracy of remote sensing data. Fortunately, we now have access to Level-2 products, but understanding their preprocessing steps is vital, especially in dealing with some error values, which can better explain why the errors occur. It is also crucial to select appropriate correction methods and enhancement techniques tailored to different sensor data features and analysis objectives. These processes require rich expert knowledge of remote sensing. However, I need to supplement my remote sensing knowledge to support my judgments further.
+The content this week is challenging for me as a beginner in remote sensing. However, these preprocessing techniques are crucial for improving the usability and accuracy of remote sensing data. Fortunately, we now have access to Level-2 products, but understanding their preprocessing steps is vital, especially in dealing with some error values, which can better explain why the errors occur. It is also crucial to select appropriate correction methods and enhancement techniques tailored to different sensor data features and analysis objectives. These processes require rich expert knowledge of remote sensing. Thus, I need to supplement my remote sensing knowledge to support my judgments further.
 
 
 # 4. Reference {.unnumbered}

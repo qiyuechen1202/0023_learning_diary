@@ -10,7 +10,7 @@ The week's lecture has introduced several remote sensing applications and their 
 
 Affected by major global climate changes caused by greenhouse gas emissions, Singapore's annual average temperature rose from 26.9°C to 28.0°C from 1980 to 2020; Moreover, by 2100, the temperature will rise by 1.4°C to 4.6°C due to the long-term effects of climate change (The National Climate Change Secretariat (NCCS), no date).
 
-However, the UHI effect exacerbates the problem of high temperatures and it is considered as one of the accumulated results of rapid urbanisation in Singapore(Borzino et al., 2020). the UHI effect is a phenomenon that urban areas have a higher temperature than the surrounding area (Oke,1982). The primary reason for the UHI effect is the greater heat storage due to land use change from natural to impervious surface(Grimmond, 2007). Besides, With the rise in urban population, the increases of building density and human activities also create more energy consumption and greenhouse gas emissions(Zhang et al., 2021). In terms of Singapore, daytime temperatures are around 0-2°C higher, and night-time temperatures are around 2-4°C higher in urban areas compared to forested areas(Figure 1) (Urban Redevelopment Authority(URA),2023). The warmer climate has adverse impacts on biodiversity, public health, food security, energy consumption and other aspects, resulting in an unsustainable future in Singapore.
+However, the UHI effect exacerbates the problem of high temperatures and it is considered as one of the accumulated results of rapid urbanisation in Singapore(Borzino et al., 2020). the UHI effect is a phenomenon that urban areas have a higher temperature than the surrounding area (Oke,1982). The primary reason for the UHI effect is the greater heat storage due to land use change from natural to impervious surface(Grimmond, 2007). Besides, With the rise in urban population, the increases in building density and human activities also create more energy consumption and greenhouse gas emissions(Zhang et al., 2021). In terms of Singapore, daytime temperatures are around 0-2°C higher, and night-time temperatures are around 2-4°C higher in urban areas compared to forested areas(Figure 1) (Urban Redevelopment Authority(URA),2023). The warmer climate has adverse impacts on biodiversity, public health, food security, energy consumption and other aspects, resulting in an unsustainable future in Singapore.
 
 ![Figure 1 The urban heat island effect in Singapor. Picture source from [Cooling Singapore](https://www.tum-create.edu.sg/research/project/cooling-singapore)](source/week04/UHI01.png)
 
@@ -18,14 +18,14 @@ However, the UHI effect exacerbates the problem of high temperatures and it is c
 
 **Charting Singapore's Net Zero Future**
 
-Singapore has proposed the Nationally Determined Contribution (NDC) and Long-Term Low-Emissions Development Strategy (LEDS) in response to their climate ambitions.In October 2022, the national climate target was further raised as follows:
+Singapore has proposed the Nationally Determined Contribution (NDC) and Long-Term Low-Emissions Development Strategy (LEDS) in response to its climate ambitions. In October 2022, the national climate target was further raised as follows:
 
 1.  Achieve net zero emissions by 2050.
 2.  Reduce 2030 emissions to 60 MtCO2e after peaking emissions earlier.
 
 ## 1.3 Policies Related to UHI {.unnumbered}
 
-To achieve net zero emission by 2050 and sustainable development, Singapore has launched some thrusts. The below sections will explore some policies and strategies related to mitigating the UHI effect.
+To achieve net zero emissions by 2050 and sustainable development, Singapore has launched some thrusts. The below sections will explore some policies and strategies related to mitigating the UHI effect.
 
 **The Singapore Green Plan 2030**
 
