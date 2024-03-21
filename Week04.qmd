@@ -88,21 +88,21 @@ Moreover, Mushore, Odindi and Mutanga (2022) examine the colour of roof coating 
 
 # 3.Reflection {.unnumbered}
 
-## 3.1 Linking to national policy, global agendas and goals {.unnumbered}
+## 3.1 Linking to National Policy, Global Agendas and Goals {.unnumbered}
 
-In this Chapter, I have studied the UHI challenges and policies in Singapore, and have proposed two approaches to achieving policy goals from the perspective of remote sensing data: Urban Morphology (LCZ) and "Cooling" Roofs. The studies of urban morphology (LCZ) can monitor the thermal environment and support HDB Green Towns programmes, contributing to sustainable urban regeneration in the future. Given Singapore's high-density built-up areas, it is challenging to adopt a large-scale strategy. Thus, “Cooling” roofs, as an "acupuncture" strategy, can effectively mitigate the local thermal environment and reduce building temperature and energy consumption. These two strategies solve the UHI effect from different urban scales, and practical application and deployment are conducive to achieving “Cooling” Singapore.
+In this Chapter, I have studied the UHI challenges and policies in Singapore, and have proposed two approaches to achieving policy goals from the perspective of remote sensing data: Urban Morphology (LCZ) and "Cooling" Roofs. The studies of urban morphology (LCZ) can monitor the thermal environment and support HDB Green Towns programmes, contributing to sustainable urban regeneration in the future. Given Singapore's high-density built-up areas, it is challenging to adopt a large-scale strategy. Thus, "Cooling" roofs, as an "acupuncture" strategy, can effectively mitigate the local thermal environment and reduce building temperature and energy consumption. These two strategies solve the UHI effect from different urban scales, and practical application and deployment are conducive to achieving "Cooling" Singapore.
 
 Regarding global agendas and goals, the policy and strategies effectively respond to the 2015 Paris Agreement. Moreover, In terms of Sustainable Development Goals (SDG) proposed by the United Nations(UN), the efforts of strategies can be reflected in SDG11 and SDG12 (Figure 9).
 
 <br/> **SDGs11**:Sustainable Cities and Communities. <br/> Make cities and human settlements inclusive, safe, resilient and sustainable. <br/> **SDGs13**: Climate Action. <br/> Take urgent action to combat climate change and its impact.
 
-The two applications of remote sensing data not only provide valuable experience for "Cooling" Singapore, but also have the potential for global promotion, providing helpful experience for global climate change response. 
+The two applications of remote sensing data not only provide valuable experience for "Cooling" Singapore, but also have the potential for global promotion, providing helpful experience for global climate change response.
 
 ![Figure 9 In support of SDGs 11 and SDG 13](source/week04/SDG11_13.png)
 
 ## 3.2 Personal Reflection {.unnumbered}
 
-Remote sensing data plays a key role in policy development in Singapore to address the UHI effect. However, we must acknowledge its limitations, primarily confined to monitoring and analysing current situations, while preventative strategies require further in-depth research. Both applications discussed UHI through LST in different types of built environments; however, Chakraborty et al. (2022) pointed out that LST obtained from satellites exhibits limited correlations with air temperature. Therefore, it is crucial to integrate remote sensing data with other data from diverse sources, such as integrating real-time temperature data with remotely sensed built environment data. This integration can drive technological innovation, allowing for a more comprehensive and effective approach to climate studies.
+Remote sensing data plays a key role in policy development in Singapore to address the UHI effect. However, we must acknowledge its limitations, primarily confined to monitoring and analysing current situations, while preventative strategies require further in-depth research. Both applications discussed UHI through LST in different types of built environments. However, Chakraborty et al. (2022) pointed out that LST obtained from satellites exhibits limited correlations with air temperature. Therefore, it is crucial to integrate remote sensing data with other data from diverse sources, such as real-time temperature data, or built environment  GIS datasets. This integration can drive technological innovation, allowing for a more comprehensive and effective approach to climate studies.
 
 Thus, these challenges highlight the need for continuous learning and innovation in remote sensing applications to ensure that these applications can adapt to changing climate conditions and drive more comprehensive, sustainable solutions.
 
