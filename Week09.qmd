@@ -48,12 +48,11 @@ Based on the characteristics of satellite images, Sidiqui, Huete and Devadas (20
 
 # 3. Reflection {.unnumbered}
 
-Capturing the LST data by myself is an exciting process, although some problems affect the availability of final results. Besides, using GEE to calculate LST is more effective and time-saving, significantly reducing the computational cost. In addition, due to the limitations of current remote sensing datasets, the application section explored the various data fusion methods, providing a research direction that combines deep learning methods and multi-sensor data to enhance the resolution of LST results. 
+Capturing the LST data by myself is an exciting process, although some problems affect the availability of final results. Besides, using GEE to calculate LST is more effective and time-saving, significantly reducing the computational cost. In addition, due to the limitations of current remote sensing datasets, the application section explored the various data fusion methods, providing a research direction that combines deep learning methods and multi-sensor data to enhance the resolution of LST results.
 
 However, it is worth noting that LST is spatial heterogeneity but also may be affected by spatial autocorrelation. Therefore, future research can explore how to more accurately reflect the spatial distribution of LST and capture the dynamic changes of UHI through image fusion that considers resolution and spectrum. One potential idea is to include terrain or building footprint data into image fusion.
 
-This course has given me a deep understanding that remote sensing is a vast interdisciplinary knowledge system. It is necessary to understand multiple subjects, such as optical mechanics, computer science, mathematics, geography, and meteorology, etc., which can better understand and apply remote sensing data. In addition,  GEE and various sensor datasets have a high exploitability,allowing more exploration for preprocessing, analysis and technique development steps. I look forward to further applying remote sensing knowledge to my study and career in the future. :)
-
+This course has given me a deep understanding that remote sensing is a vast interdisciplinary knowledge system. It is necessary to understand multiple subjects, such as optical mechanics, computer science, mathematics, geography, and meteorology, etc., which can better understand and apply remote sensing data. In addition, GEE and various sensor datasets have a high exploitability,allowing more exploration for preprocessing, analysis and technique development steps. I look forward to further applying remote sensing knowledge to my study and career in the future. :)
 
 # 4. Reference {.unnumbered}
 
