@@ -4,11 +4,13 @@ title: "Week01"
 
 # 1.Content Summary: Intro to Remote Sensing {.unnumbered}
 
+## 1.1 The Fundamental Concepts {.unnumbered}
+
 The below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.
 
 ![Figure 1 The Content Summary of Week01 (Source from MacLachlan,2024; Tempfli, et al.,2009; EARTHDATA, no date; Guo,Su and Hu,2023; SpatialPost, 2023)](source/week01/week01_summary.png)
 
-## 1.1 Basic Raster Image Processing {.unnumbered}
+## 1.2 Basic Raster Image Processing {.unnumbered}
 
 In this section, I employ the satellite image of Cape Town collected for Sentinel-2 L2A on 15 May 2022. [European Space Agency(ESA)](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2#:~:text=The%20Copernicus%20Sentinel%2D2%20mission,of%20our%20land%20and%20vegetation) has proposed the Copernicus Sentinel-2 mission to observe earth by recording the wide-swath, high-resolution, multi-spectral imagery. The Sentinel-2 captures 13 spectral bands with different spatial resolutions.
 

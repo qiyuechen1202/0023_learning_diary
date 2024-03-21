@@ -165,7 +165,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#content-summary-intro-to-remote-sensing" id="toc-content-summary-intro-to-remote-sensing" class="nav-link active" data-scroll-target="#content-summary-intro-to-remote-sensing">1.Content Summary: Intro to Remote Sensing</a>
   <ul class="collapse">
-  <li><a href="#basic-raster-image-processing" id="toc-basic-raster-image-processing" class="nav-link" data-scroll-target="#basic-raster-image-processing">1.1 Basic Raster Image Processing</a></li>
+  <li><a href="#the-fundamental-concepts" id="toc-the-fundamental-concepts" class="nav-link" data-scroll-target="#the-fundamental-concepts">1.1 The Fundamental Concepts</a></li>
+  <li><a href="#basic-raster-image-processing" id="toc-basic-raster-image-processing" class="nav-link" data-scroll-target="#basic-raster-image-processing">1.2 Basic Raster Image Processing</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">2.Application</a>
   <ul class="collapse">
@@ -200,6 +201,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="content-summary-intro-to-remote-sensing" class="level1 unnumbered">
 <h1 class="unnumbered">1.Content Summary: Intro to Remote Sensing</h1>
+<section id="the-fundamental-concepts" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-fundamental-concepts">1.1 The Fundamental Concepts</h2>
 <p>The below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -207,8 +210,9 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Figure 1 The Content Summary of Week01 (Source from MacLachlan,2024; Tempfli, et al.,2009; EARTHDATA, no date; Guo,Su and Hu,2023; SpatialPost, 2023)</figcaption>
 </figure>
 </div>
+</section>
 <section id="basic-raster-image-processing" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="basic-raster-image-processing">1.1 Basic Raster Image Processing</h2>
+<h2 class="unnumbered anchored" data-anchor-id="basic-raster-image-processing">1.2 Basic Raster Image Processing</h2>
 <p>In this section, I employ the satellite image of Cape Town collected for Sentinel-2 L2A on 15 May 2022. <a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2#:~:text=The%20Copernicus%20Sentinel%2D2%20mission,of%20our%20land%20and%20vegetation">European Space Agency(ESA)</a> has proposed the Copernicus Sentinel-2 mission to observe earth by recording the wide-swath, high-resolution, multi-spectral imagery. The Sentinel-2 captures 13 spectral bands with different spatial resolutions.</p>
 <p>To explore the features of spectral bands and their combinations, the data is resampled to 20m by considering the neighbouring pixels. Further, the bands are rearranged based on the band combinations provided by <a href="https://gisgeography.com/sentinel-2-bands-combinations/">GISGeography</a> , as shown in Figure 2.</p>
 <p>Figure 2 combines the red, green, and blue channels, reflecting an image similar to what the eye sees. The colour infrared adopts the near-infrared (B8) band to capture chlorophyll, showing healthier vegetation with darker red.</p>
