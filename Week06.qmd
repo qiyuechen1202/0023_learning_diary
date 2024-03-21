@@ -4,7 +4,6 @@ title: "Week06"
 
 # 1. Content Summary: Google Earth Engine (GEE) {.unnumbered}
 
-
 ## 1.1 What is GEE ? {.unnumbered}
 
 Based on JavaScript, Google proposed Google Earth Engine(GEE) in 2010 as a cloud-based platform for processing geospatial datasets and developing applications(Amani et al.,2020). GEE provides diverse functions for 5 objects, namely vector, raster, feature, string and number.

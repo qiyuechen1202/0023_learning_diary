@@ -8,7 +8,7 @@ This week, I have learned the preprocessing steps of remote sensing images. When
 
 ## 1.1 Corrections {.unnumbered}
 
-The following mind map summarises the knowledge of four correction methods, including Geometric, Atmospheric correction, Topographic and Radiometric correction, and focuses on the reasons and methods for using correction methods.
+The following mind map summarises the knowledge of four correction methods, including Geometric, Atmospheric, Topographic and Radiometric Correction, and focuses on the reasons and methods for using correction methods.
 
 ![Figure 1: The Mind Map of Corrections. Content Source from MacLachlan (2024)](source/week03/Figure%201.png)
 
@@ -16,7 +16,7 @@ The following mind map summarises the knowledge of four correction methods, incl
 
 ### 1.2.1 Data Joining {.unnumbered}
 
-Image data can be joined by overlapping the base and second image by 20% \~30%. According to Jensen (2015), the joining steps are:
+Image data can be joined by overlapping the base and second image by 20% ~30%. According to Jensen (2015), the joining steps are:
 
 1.  **Sample Selection**: <br/> Select a representative sample within the overlapping area.
 2.  **Histogram Extraction**: <br/> Extract a histogram from the base image.
