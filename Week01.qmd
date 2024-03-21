@@ -8,7 +8,9 @@ title: "Week01"
 
 The below mind map concludes the content of week 1. Several fundamental concepts on remote sensing are covered in the lecture, including the definitions, types, electromagnetic (EM) waves, energy interaction, and resolution. Next, I will employ Cape Town as an example to further understand and deepen this knowledge.
 
+
 ![Figure 1 The Content Summary of Week01 (Source from MacLachlan,2024; Tempfli, et al.,2009; EARTHDATA, no date; Guo,Su and Hu,2023; SpatialPost, 2023)](source/week01/week01_summary.png)
+
 
 ## 1.2 Basic Raster Image Processing {.unnumbered}
 
@@ -59,6 +61,7 @@ Although the advantages of remote sensing prove that it can be widely used in ur
 Remote sensing provides multiple datasets, which creates possibilities for exploring urban studies. Exciting is the potential synergy between remote sensing data and socioeconomic indicators, presenting an avenue for exploring spatial heterogeneity. It may be included in my future research. However, the drawbacks also suggest that as a researcher of urban studies, I need to think carefully when using this data. This entails thoughtful decisions regarding selecting remote sensing data, processing methods, analytical approaches, and result interpretation.
 
 My previous studies focused on applying Geographic Information Systems (GIS) with vector data. Over the next few weeks, exploring the knowledge of remote sensing will allow me to integrate these two technologies, which can enhance my ability in data acquisition and spatial analysis. I look forward to learning about remote sensing in the coming weeks. :)
+
 
 # 4.Reference {.unnumbered}
 
