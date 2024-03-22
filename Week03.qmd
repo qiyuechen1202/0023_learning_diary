@@ -16,7 +16,7 @@ The following mind map summarises the knowledge of four correction methods, incl
 
 ### 1.2.1 Data Joining {.unnumbered}
 
-Image data can be joined by overlapping the base and second image by 20% ~30%. According to Jensen (2015), the joining steps are:
+Image data can be joined by overlapping the base and second image by 20% \~30%. According to Jensen (2015), the joining steps are:
 
 1.  **Sample Selection**: <br/> Select a representative sample within the overlapping area.
 2.  **Histogram Extraction**: <br/> Extract a histogram from the base image.
@@ -34,7 +34,7 @@ When we may have problems joining different images (typically in surface reflect
 -   Calculate other metrics from the image.
 :::
 
-### 1.2.2 Image enhancement {.unnumbered}
+### 1.2.2 Image Enhancement {.unnumbered}
 
 -   The Methods of **Contrast Enhancement**
 
